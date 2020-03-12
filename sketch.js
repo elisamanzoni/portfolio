@@ -1,3 +1,9 @@
+//menu
+var menu;
+var false_menu;
+var linea_menu1;
+var linea_menu2;
+
 var digitaleButton;
 var coorporateButton;
 var selectTuttiButton;
@@ -25,6 +31,14 @@ function preload(){
 function setup() {
   // var cnv = createCanvas(windowWidth, windowHeight);
   // cnv.class('canvas');
+
+//menu
+menu = select('#menu');
+menu.mouseClicked(menu_open);
+
+false_menu = select('#false_menu');
+linea_menu1 = select('#linea_menu1');
+linea_menu2 = select('#linea_menu2');
 
 //classe dei lavori
   digitaleClass = selectAll('.digitale');
@@ -73,6 +87,44 @@ function draw() {
   // ellipseMode(CENTER);
   // ellipse(mouseX, mouseY, 35, 35);
 }
+
+function menu_open(){
+
+  if (linea_menu1.hasClass('linea_dritta1')) {
+
+
+    linea_menu1.removeClass('linea_dritta1');
+    linea_menu2.removeClass('linea_dritta2');
+
+    linea_menu1.addClass('linea_ruotata1');
+    linea_menu2.addClass('linea_ruotata2');
+
+    false_menu.removeClass('menu');
+    false_menu.removeClass('hide');
+    false_menu.removeClass('menu_closing');
+    false_menu.addClass('menu_opening');
+
+    
+  }
+
+  else if(linea_menu1.hasClass('linea_ruotata1')){
+
+    linea_menu1.removeClass('linea_ruotata1');
+    linea_menu2.removeClass('linea_ruotata2');
+
+    linea_menu1.addClass('linea_dritta1');
+    linea_menu2.addClass('linea_dritta2');
+
+    false_menu.removeClass('menu_opening');
+    false_menu.addClass('menu_closing');
+    false_menu.addClass('hide');
+
+
+  }
+
+}
+
+
 
 function selectDigitale(){
 

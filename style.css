@@ -43,12 +43,42 @@ a{
 
 .menu{
   position: fixed;
-  top: 45px;
-  right:10vw;
+  top: 80px;
+  right:13vw;
   width:70px;
   height: 70px;
   border-radius: 100%;
+  transform: translate(50%, -50%);
   /* border: 1px solid orange; */
+}
+
+@keyframes menu_open {
+  from{
+    width:70px;
+    height: 70px;
+    background-color: none;
+  }
+  to{
+    width:200vw;
+    height: 200vw;
+    background-color: #f7931e;
+  }
+
+}
+
+.menu_opening{
+  position: fixed;
+  top: 80px;
+  right:13vw;
+  width:200vw;
+  height: 200vw;
+  border-radius: 100%;
+  transform: translate(50%, -50%);
+  animation:menu_open 1s forwards;
+}
+
+.menu_closing{
+  animation:menu_open 1s reverse forwards;
 }
 
 .linea_menu{
@@ -88,15 +118,37 @@ a{
   animation: none-orange 0.5s forwards;
 }
 
-.linea_ruotata1{
+@keyframes ruota_linea1 {
+  from{
+    transform: translate(-50%, -50%);
+    top:40%;
+  }
+
+  to{
     transform: translate(-50%, -50%)rotate(45deg);
     top:50%;
+  }
+}
+
+@keyframes ruota_linea2 {
+  from{
+    transform: translate(-50%, -50%);
+    top:60%;
+  }
+
+  to{
+    transform: translate(-50%, -50%)rotate(-45deg);
+    top:50%;
+  }
+}
+
+.linea_ruotata1{
+    animation: ruota_linea1 1s forwards!important;
     background-color: white;
 }
 
 .linea_ruotata2{
-    transform: translate(-50%, -50%)rotate(-45deg);
-    top:50%;
+    animation: ruota_linea2 1s forwards!important;
     background-color: white;
 }
 
