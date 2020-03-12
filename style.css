@@ -1,3 +1,7 @@
+
+
+
+
 body{
   background-color: black;
   padding: 0;
@@ -15,6 +19,7 @@ body::-webkit-scrollbar {
 a{
   text-decoration: none;
   color:inherit;
+  cursor:crosshair!important;
 
 }
 
@@ -33,20 +38,20 @@ a{
 
 .logo{
   position: fixed;
-  top: 50px;
+  top: 40px;
   left:10vw;
   color: #f7931e;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .menu{
   position: fixed;
-  top: 80px;
-  right:13vw;
-  width:70px;
-  height: 70px;
+  top: 65px;
+  right:18vw;
+  width:60px;
+  height: 60px;
   border-radius: 100%;
   transform: translate(50%, -50%);
   /* border: 1px solid orange; */
@@ -59,8 +64,8 @@ a{
     background-color: none;
   }
   to{
-    width:200vw;
-    height: 200vw;
+    width:220vh;
+    height: 220vh;
     background-color: #f7931e;
   }
 
@@ -70,11 +75,11 @@ a{
   position: fixed;
   top: 80px;
   right:13vw;
-  width:200vw;
-  height: 200vw;
+  width:400vw;
+  height: 400vw;
   border-radius: 100%;
   transform: translate(50%, -50%);
-  animation:menu_open 1s forwards;
+  animation:menu_open 1.2s forwards;
 }
 
 .menu_closing{
@@ -83,7 +88,7 @@ a{
 
 .linea_menu{
   position: absolute;
-  width:45px;
+  width:35px;
   height: 4px;
   left:50%;
 }
@@ -114,9 +119,6 @@ a{
   animation: orange-white 0.5s forwards;
 }
 
-.menu:hover{
-  animation: none-orange 0.5s forwards;
-}
 
 @keyframes ruota_linea1 {
   from{
@@ -157,17 +159,17 @@ a{
 /* generali MENU PORTFOLIO */
 
 .opacity1{
-  opacity:30%!important;
+  opacity:50%!important;
   color:white!important;
 }
 
 .nome{
   font-weight: bold;
-  font-size: 30pt;
+  font-size: 9vw;
 }
 
 .descrizione{
-  font-size: 10pt;
+  font-size: 4vw;
   line-height: 1.7;
   letter-spacing: 1px;
 }
@@ -175,25 +177,15 @@ a{
 
 .portfolio_container{
   position: absolute;
-  top: 20vh;
-  left:35vw;
-  width:50vw;
+  top: 50px;
+  left:15vw;
+  width:70vw;
   color: white;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 10vh;
   height: auto;
   /* border: 1px solid green; */
 }
-
-@keyframes opacity {
-  from {opacity: 0;}
-  to {opacity:100%!important}
-  }
-
-  @keyframes opacity2 {
-    from {opacity: 0.5;}
-    to {opacity:100%!important}
-    }
 
 .display{
     display: table;
@@ -205,141 +197,381 @@ a{
 
 /* line view */
 
-.image_line{
-  position: fixed;
-  right: 5vw;
-  bottom: 10vh;
-  width: 25vw;
-  opacity: 60%;
-}
-
 
 .nome_e_descrizione_line{
-      width:50vw;
-
+      width:100%;
       margin-top: 70px;
       opacity:0%;
       color: white;
     }
 
-
-
-.nome_e_descrizione_line:hover{
-  animation: opacity 0.5s forwards;
-  opacity:100%!important;
-}
-
-
-
-/* image view */
-
-.image_img{
-  width: 100%;
-}
-
-
-.nome_e_descrizione_img{
-      width:44%;
-      height: auto;
-      /* height: 70px; */
-      /* border: 1px solid yellow; */
-      margin-top: 50px;
-      opacity:50%;
-      color: white;
-      margin-right:25px;
-      display: inline-table;
+    .image_line{
+      display:none;
+      position: fixed;
+      right: 5vw;
+      bottom: 10vh;
+      width: 25vw;
+      opacity: 60%;
     }
 
 
 
-.nome_e_descrizione_img:hover{
-  animation: opacity2 0.5s forwards;
-  opacity:100%!important;
-}
+
 
 
 /* filtri */
 
 .filtri_container{
-  position: fixed;
-  bottom: 10vh;
-  right:70vw;
-  width:20vw;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  /* border: 1px solid yellow; */
-  height:auto;
+  display: none;
 }
 
-.line_filtri{
-  height: 2px;
-  width: 80%;
-  background-color: white;
-  margin-top: 8px;
-  margin-bottom: 30px;
-}
 
-.button_filtri{
-  font-size: 16pt;
-  margin-bottom: 4px;
-}
 
-.button_filtri_immagini{
-  font-size: 18pt;
-  margin-bottom: 30px;
-}
+@media screen and (min-width: 1024px){
 
-.not_selected{
-  opacity: 50%;
-}
+  /* logo */
 
-@keyframes opacity_filtri {
-from {opacity: 50%!important;}
-to {opacity:100%!important}
-}
+  .logo{
+    position: fixed;
+    top: 50px;
+    left:10vw;
+    color: #f7931e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
 
-.not_selected:hover{
-  animation: opacity_filtri 0.5s forwards;
-  opacity:100%!important;
-}
+  .menu{
+    position: fixed;
+    top: 80px;
+    right:13vw;
+    width:70px;
+    height: 70px;
+    border-radius: 100%;
+    transform: translate(50%, -50%);
+    /* border: 1px solid orange; */
+  }
 
-/* quadratino selezione */
-.quadratino_filtri{
-  position: absolute;
-  left: -25px;
-  width: 6px;
-  height: 6px;
-  background-color: white;
-}
+  @keyframes menu_open {
+    from{
+      width:70px;
+      height: 70px;
+      background-color: none;
+    }
+    to{
+      width:220vh;
+      height: 220vh;
+      background-color: #f7931e;
+    }
 
-.q_lista{
-  top: 75px;
-}
+  }
 
-.q_immagini{
-  top: 108px;
-}
+  .menu_opening{
+    position: fixed;
+    top: 80px;
+    right:13vw;
+    width:400vw;
+    height: 400vw;
+    border-radius: 100%;
+    transform: translate(50%, -50%);
+    animation:menu_open 1.2s forwards;
+  }
 
-.q_tutti{
-  top: 166px;
-}
+  .menu_closing{
+    animation:menu_open 1s reverse forwards;
+  }
 
-.q_coorporate{
-  top: 195px;
-}
+  .linea_menu{
+    position: absolute;
+    width:45px;
+    height: 4px;
+    left:50%;
+  }
 
-.q_digitale{
-  top: 225px;
-}
+  .linea_dritta1{
+      transform: translate(-50%, -50%);
+      top:40%;
+      background-color: #f7931e;
+  }
 
-.q_editoriale{
-  top: 254px;
-}
+  .linea_dritta2{
+      transform: translate(-50%, -50%);
+      top:60%;
+      background-color: #f7931e;
+  }
 
-.q_illustrazione{
-  top: 283px;
-}
+  @keyframes orange-white {
+    from{background-color: #f7931e;}
+    to{background-color: white;}
+  }
 
-.q_installazione{
-  top: 313px;
+  @keyframes none-orange {
+    from{background-color: none;}
+    to{background-color: #f7931e;}
+  }
+
+  .menu:hover > .linea_menu{
+    animation: orange-white 0.5s forwards;
+  }
+
+  .menu:hover{
+    animation: none-orange 0.5s forwards;
+  }
+
+  @keyframes ruota_linea1 {
+    from{
+      transform: translate(-50%, -50%);
+      top:40%;
+    }
+
+    to{
+      transform: translate(-50%, -50%)rotate(45deg);
+      top:50%;
+    }
+  }
+
+  @keyframes ruota_linea2 {
+    from{
+      transform: translate(-50%, -50%);
+      top:60%;
+    }
+
+    to{
+      transform: translate(-50%, -50%)rotate(-45deg);
+      top:50%;
+    }
+  }
+
+  .linea_ruotata1{
+      animation: ruota_linea1 1s forwards!important;
+      background-color: white;
+  }
+
+  .linea_ruotata2{
+      animation: ruota_linea2 1s forwards!important;
+      background-color: white;
+  }
+
+  /* generali MENU PORTFOLIO */
+
+  .opacity1{
+    opacity:30%!important;
+    color:white!important;
+  }
+
+  .nome{
+    font-weight: bold;
+    font-size: 30pt;
+  }
+
+  .descrizione{
+    font-size: 10pt;
+    line-height: 1.7;
+    letter-spacing: 1px;
+  }
+
+
+  .portfolio_container{
+    position: absolute;
+    top: 20vh;
+    left:35vw;
+    width:50vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10vh;
+    height: auto;
+    /* border: 1px solid green; */
+  }
+
+  @keyframes opacity {
+    from {opacity: 0;}
+    to {opacity:100%!important}
+    }
+
+    @keyframes opacity2 {
+      from {opacity: 0.5;}
+      to {opacity:100%!important}
+      }
+
+  .display{
+      display: table;
+    }
+
+  .hide{
+      display: none!important;
+    }
+
+  /* line view */
+
+  .image_line{
+    position: fixed;
+    right: 5vw;
+    bottom: 10vh;
+    width: 25vw;
+    opacity: 60%;
+  }
+
+
+  .nome_e_descrizione_line{
+        width:50vw;
+
+        margin-top: 70px;
+        opacity:0%;
+        color: white;
+      }
+
+
+
+  .nome_e_descrizione_line:hover{
+    animation: opacity 0.5s forwards;
+    opacity:100%!important;
+  }
+
+
+
+  /* image view */
+
+  .image_img{
+    width: 100%;
+  }
+
+
+  .nome_e_descrizione_img{
+        width:44%;
+        height: auto;
+        /* height: 70px; */
+        /* border: 1px solid yellow; */
+        margin-top: 50px;
+        opacity:50%;
+        color: white;
+        margin-right:25px;
+        display: inline-block;
+      }
+
+
+
+  .nome_e_descrizione_img:hover{
+    animation: opacity2 0.5s forwards;
+    opacity:100%!important;
+  }
+
+
+/* filtri */
+
+  .filtri_container{
+    position: fixed;
+    bottom: 10vh;
+    right:70vw;
+    width:20vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    /* border: 1px solid yellow; */
+    height:auto;
+  }
+
+  .line_filtri{
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    margin-top: 8px;
+    margin-bottom: 30px;
+  }
+
+  .button_filtri{
+    font-size: 16pt;
+    margin-bottom: 4px;
+  }
+
+  .button_filtri_immagini{
+    font-size: 18pt;
+    margin-bottom: 30px;
+  }
+
+  .not_selected{
+    opacity: 50%;
+  }
+
+  @keyframes opacity_filtri {
+  from {opacity: 50%!important;}
+  to {opacity:100%!important}
+  }
+
+  .not_selected:hover{
+    animation: opacity_filtri 0.5s forwards;
+    opacity:100%!important;
+  }
+
+  /* quadratino selezione */
+  .quadratino_filtri{
+    position: absolute;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+  }
+
+  .q_lista{
+    top: 75px;
+  }
+
+  .q_immagini{
+    top: 108px;
+  }
+
+  .q_tutti{
+    top: 166px;
+  }
+
+  .q_coorporate{
+    top: 195px;
+  }
+
+  .q_digitale{
+    top: 225px;
+  }
+
+  .q_editoriale{
+    top: 254px;
+  }
+
+  .q_illustrazione{
+    top: 283px;
+  }
+
+  .q_installazione{
+    top: 313px;
+  }
+
+  .nome_e_descrizione_img{
+        width:44%;
+        height: auto;
+        /* height: 70px; */
+        /* border: 1px solid yellow; */
+        margin-top: 50px;
+        opacity:50%;
+        color: white;
+        margin-right:25px;
+        display: inline-table;
+      }
+
+
+      /* menu */
+
+
+      @keyframes menu_open {
+        from{
+          width:70px;
+          height: 70px;
+          background-color: none;
+        }
+        to{
+          width:220vw;
+          height: 220vw;
+          background-color: #f7931e;
+        }
+
+      }
+
+
 }
