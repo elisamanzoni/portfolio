@@ -60,7 +60,7 @@ function setup() {
   imgButton.mouseClicked(imgView);
 
   lineButton = select('#lista');
-  lineButton.mouseClicked(imgView);
+  lineButton.mouseClicked(listView);
 
 
 
@@ -360,5 +360,30 @@ function imgView(){
     for (let i = 0; i < image_line_class.length; i++) {
       image_line_class[i].addClass('image_img');
       image_line_class[i].removeClass('image_line');
+      }
+}
+
+function listView(){
+
+  quadratino1.addClass('q_lista');
+  quadratino1.removeClass('q_immagini');
+
+  lineButton.removeClass('not_selected');
+  imgButton.addClass('not_selected');
+
+  nome_e_descrizione_img_class = selectAll('.nome_e_descrizione_img');
+  image_img_class = selectAll('.image_img');
+
+  portfolio_container1 = select('#portfolio_container1');
+  portfolio_container1.removeClass('hide');
+
+  for (let i = 0; i < nome_e_descrizione_img_class.length; i++) {
+    nome_e_descrizione_img_class[i].addClass('nome_e_descrizione_line');
+    nome_e_descrizione_img_class[i].removeClass('nome_e_descrizione_img');
+    }
+
+    for (let i = 0; i < image_img_class.length; i++) {
+      image_img_class[i].addClass('image_line');
+      image_img_class[i].removeClass('image_img');
       }
 }

@@ -12,11 +12,95 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+a{
+  text-decoration: none;
+  color:inherit;
+
+}
+
+.class0{
+  position: absolute;
+  top:0%;
+}
+
 /* .canvas{
   position: fixed;
   background-color: none;
   z-index: -1;
 } */
+
+/* logo */
+
+.logo{
+  position: fixed;
+  top: 50px;
+  left:10vw;
+  color: #f7931e;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.menu{
+  position: fixed;
+  top: 45px;
+  right:10vw;
+  width:70px;
+  height: 70px;
+  border-radius: 100%;
+  /* border: 1px solid orange; */
+}
+
+.linea_menu{
+  position: absolute;
+  width:45px;
+  height: 4px;
+  left:50%;
+}
+
+.linea_dritta1{
+    transform: translate(-50%, -50%);
+    top:40%;
+    background-color: #f7931e;
+}
+
+.linea_dritta2{
+    transform: translate(-50%, -50%);
+    top:60%;
+    background-color: #f7931e;
+}
+
+@keyframes orange-white {
+  from{background-color: #f7931e;}
+  to{background-color: white;}
+}
+
+@keyframes none-orange {
+  from{background-color: none;}
+  to{background-color: #f7931e;}
+}
+
+.menu:hover > .linea_menu{
+  animation: orange-white 0.5s forwards;
+}
+
+.menu:hover{
+  animation: none-orange 0.5s forwards;
+}
+
+.linea_ruotata1{
+    transform: translate(-50%, -50%)rotate(45deg);
+    top:50%;
+    background-color: white;
+}
+
+.linea_ruotata2{
+    transform: translate(-50%, -50%)rotate(-45deg);
+    top:50%;
+    background-color: white;
+}
+
+
 
 /* generali MENU PORTFOLIO */
 
