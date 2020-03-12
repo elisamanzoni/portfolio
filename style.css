@@ -1,0 +1,209 @@
+body{
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  cursor: crosshair!important;
+  /* cursor: none!important; */
+  width: 100vw;
+  height:100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* .canvas{
+  position: fixed;
+  background-color: none;
+  z-index: -1;
+} */
+
+/* generali MENU PORTFOLIO */
+
+.opacity1{
+  opacity:30%!important;
+  color:white!important;
+}
+
+.nome{
+  font-weight: bold;
+  font-size: 30pt;
+}
+
+.descrizione{
+  font-size: 10pt;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+
+.portfolio_container{
+  position: absolute;
+  top: 20vh;
+  left:35vw;
+  width:50vw;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10vh;
+  height: auto;
+  /* border: 1px solid green; */
+}
+
+@keyframes opacity {
+  from {opacity: 0;}
+  to {opacity:100%!important}
+  }
+
+  @keyframes opacity2 {
+    from {opacity: 0.5;}
+    to {opacity:100%!important}
+    }
+
+.display{
+    display: table;
+  }
+
+.hide{
+    display: none!important;
+  }
+
+/* line view */
+
+.image_line{
+  position: fixed;
+  right: 5vw;
+  bottom: 10vh;
+  width: 25vw;
+  opacity: 60%;
+}
+
+
+.nome_e_descrizione_line{
+      width:50vw;
+
+      margin-top: 70px;
+      opacity:0%;
+      color: white;
+    }
+
+
+
+.nome_e_descrizione_line:hover{
+  animation: opacity 0.5s forwards;
+  opacity:100%!important;
+}
+
+
+
+/* image view */
+
+.image_img{
+  width: 100%;
+}
+
+
+.nome_e_descrizione_img{
+      width:44%;
+      height: auto;
+      /* height: 70px; */
+      /* border: 1px solid yellow; */
+      margin-top: 50px;
+      opacity:50%;
+      color: white;
+      margin-right:25px;
+      display: inline-table;
+    }
+
+
+
+.nome_e_descrizione_img:hover{
+  animation: opacity2 0.5s forwards;
+  opacity:100%!important;
+}
+
+
+/* filtri */
+
+.filtri_container{
+  position: fixed;
+  bottom: 10vh;
+  right:70vw;
+  width:20vw;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  /* border: 1px solid yellow; */
+  height:auto;
+}
+
+.line_filtri{
+  height: 2px;
+  width: 80%;
+  background-color: white;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.button_filtri{
+  font-size: 16pt;
+  margin-bottom: 4px;
+}
+
+.button_filtri_immagini{
+  font-size: 18pt;
+  margin-bottom: 30px;
+}
+
+.not_selected{
+  opacity: 50%;
+}
+
+@keyframes opacity_filtri {
+from {opacity: 50%!important;}
+to {opacity:100%!important}
+}
+
+.not_selected:hover{
+  animation: opacity_filtri 0.5s forwards;
+  opacity:100%!important;
+}
+
+/* quadratino selezione */
+.quadratino_filtri{
+  position: absolute;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+}
+
+.q_lista{
+  top: 75px;
+}
+
+.q_immagini{
+  top: 108px;
+}
+
+.q_tutti{
+  top: 166px;
+}
+
+.q_coorporate{
+  top: 195px;
+}
+
+.q_digitale{
+  top: 225px;
+}
+
+.q_editoriale{
+  top: 254px;
+}
+
+.q_illustrazione{
+  top: 283px;
+}
+
+.q_installazione{
+  top: 313px;
+}
