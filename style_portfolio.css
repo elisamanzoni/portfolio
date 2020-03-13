@@ -34,11 +34,11 @@ a{
   top:0%;
 }
 
-.canvas{
+/* .canvas{
   position: fixed;
   background-color: none;
   z-index: -1;
-}
+} */
 
 /* -----------------------------------
 -----------LOGO--------------------- */
@@ -65,10 +65,6 @@ a{
   /* border: 1px solid orange; */
 }
 
-.white{
-  background-color: white;
-}
-
 @keyframes menu_open {
   from{
     width:70px;
@@ -89,7 +85,7 @@ a{
   right:13vw;
   border-radius: 100%;
   transform: translate(50%, -50%);
-  animation:menu_open 1s forwards;
+  animation:menu_open 1.2s forwards;
 }
 
 .menu_closing{
@@ -173,7 +169,7 @@ a{
   font-family: 'Roboto', sans-serif;
   height: 60vh;
   transform: translate(-50%, -50%);
-  animation: opacity 1s forwards;
+  animation: opacity 1.5s forwards;
 }
 
 .menu_list{
@@ -203,6 +199,37 @@ a{
   margin-bottom: 8vw;
 }
 
+/* -----------------------------------
+-----------MENU PORTFOLIO generali--------------------- */
+
+.opacity1{
+  opacity:50%!important;
+  color:white!important;
+}
+
+.nome{
+  font-weight: bold;
+  font-size: 9vw;
+}
+
+.descrizione{
+  font-size: 4vw;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+
+.portfolio_container{
+  position: absolute;
+  top: 50px;
+  left:15vw;
+  width:70vw;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10vh;
+  height: auto;
+  /* border: 1px solid green; */
+}
 
 .display{
     display: table;
@@ -213,24 +240,35 @@ a{
   }
 
 
-  /* ------------- NOME BACKGROUND---------------------
-   ----------------------------------------------*/
+/* LINE VIEW */
 
-   .nome_background{
-     position: fixed;
-     transform: translate(-50%, -50%);
-     /* border: 1px solid white; */
-     left: 50%;
-     top: 50%;
-     width: auto;
-     height: auto;
-     color: white;
-     font-family: 'Roboto', sans-serif;
-     font-size: 60px;
-     font-weight: bold;
-     z-index:-2;
-   }
 
+.nome_e_descrizione_line{
+      width:100%;
+      margin-top: 70px;
+      opacity:0%;
+      color: white;
+    }
+
+    .image_line{
+      display:none;
+      position: fixed;
+      right: 5vw;
+      bottom: 10vh;
+      width: 25vw;
+      opacity: 60%;
+    }
+
+
+
+
+    /* -----------------------------------
+    -----------FILTRI--------------------- */
+
+
+.filtri_container{
+  display: none;
+}
 
 /* --------------------------------------------------------------------
 ------------------------------------------------------------------- */
@@ -293,7 +331,7 @@ a{
     height: 400vw;
     border-radius: 100%;
     transform: translate(50%, -50%);
-    animation:menu_open 1s forwards;
+    animation:menu_open 1.2s forwards;
   }
 
   .menu_closing{
@@ -424,6 +462,48 @@ animation: menu_name_contact_bigger 0.5s forwards;
 }
 
 
+  /* -----------------------------------
+  -----------MENU PORTFOLIO generali--------------------- */
+
+  .opacity1{
+    opacity:30%!important;
+    color:white!important;
+  }
+
+  .nome{
+    font-weight: bold;
+    font-size: 30pt;
+  }
+
+  .descrizione{
+    font-size: 10pt;
+    line-height: 1.7;
+    letter-spacing: 1px;
+  }
+
+
+  .portfolio_container{
+    position: absolute;
+    top: 20vh;
+    left:35vw;
+    width:50vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10vh;
+    height: auto;
+    /* border: 1px solid green; */
+  }
+
+  @keyframes opacity {
+    from {opacity: 0;}
+    to {opacity:100%!important}
+    }
+
+    @keyframes opacity2 {
+      from {opacity: 0.5;}
+      to {opacity:100%!important}
+      }
+
   .display{
       display: table;
     }
@@ -432,23 +512,163 @@ animation: menu_name_contact_bigger 0.5s forwards;
       display: none!important;
     }
 
-    /* ------------- NOME BACKGROUND---------------------
-     ----------------------------------------------*/
+  /* LINE VIEW */
 
-     .nome_background{
-       position: fixed;
-       transform: translate(-50%, -50%);
-       /* border: 1px solid white; */
-       left: 50%;
-       top: 50%;
-       width: auto;
-       height: auto;
-       color: white;
-       font-family: 'Roboto', sans-serif;
-       font-size: 100px;
-       font-weight: bold;
-       z-index:-2;
-     }
+  .image_line{
+    display: block;
+    position: fixed;
+    right: 5vw;
+    bottom: 10vh;
+    width: 25vw;
+    opacity: 60%;
+  }
+
+
+  .nome_e_descrizione_line{
+        width:50vw;
+
+        margin-top: 70px;
+        opacity:0%;
+        color: white;
+      }
+
+
+
+  .nome_e_descrizione_line:hover{
+    animation: opacity 0.5s forwards;
+    opacity:100%!important;
+  }
+
+
+
+  /* IMAGE VIEW */
+
+  .image_img{
+    width: 100%;
+  }
+
+
+  .nome_e_descrizione_img{
+        width:44%;
+        height: auto;
+        /* height: 70px; */
+        /* border: 1px solid yellow; */
+        margin-top: 50px;
+        opacity:50%;
+        color: white;
+        margin-right:25px;
+        display: inline-block;
+      }
+
+
+
+  .nome_e_descrizione_img:hover{
+    animation: opacity2 0.5s forwards;
+    opacity:100%!important;
+  }
+
+
+  /* -----------------------------------
+  -----------FILTRI--------------------- */
+
+  .filtri_container{
+    position: fixed;
+    bottom: 10vh;
+    right:70vw;
+    width:20vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    /* border: 1px solid yellow; */
+    height:auto;
+  }
+
+  .line_filtri{
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    margin-top: 8px;
+    margin-bottom: 30px;
+  }
+
+  .button_filtri{
+    font-size: 16pt;
+    margin-bottom: 4px;
+  }
+
+  .button_filtri_immagini{
+    font-size: 18pt;
+    margin-bottom: 30px;
+  }
+
+  .not_selected{
+    opacity: 50%;
+  }
+
+  @keyframes opacity_filtri {
+  from {opacity: 50%!important;}
+  to {opacity:100%!important}
+  }
+
+  .not_selected:hover{
+    animation: opacity_filtri 0.5s forwards;
+    opacity:100%!important;
+  }
+
+  /* QUADRATINO SELEZIONE */
+
+  .quadratino_filtri{
+    position: absolute;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+  }
+
+  .q_lista{
+    top: 75px;
+  }
+
+  .q_immagini{
+    top: 108px;
+  }
+
+  .q_tutti{
+    top: 166px;
+  }
+
+  .q_coorporate{
+    top: 195px;
+  }
+
+  .q_digitale{
+    top: 225px;
+  }
+
+  .q_editoriale{
+    top: 254px;
+  }
+
+  .q_illustrazione{
+    top: 283px;
+  }
+
+  .q_installazione{
+    top: 313px;
+  }
+
+  .nome_e_descrizione_img{
+        width:44%;
+        height: auto;
+        /* height: 70px; */
+        /* border: 1px solid yellow; */
+        margin-top: 50px;
+        opacity:50%;
+        color: white;
+        margin-right:25px;
+        display: inline-table;
+      }
+
 
 
 }
