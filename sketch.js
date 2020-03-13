@@ -90,6 +90,8 @@ function draw() {
 
 function menu_open(){
 
+  var menu_container = select('#menu_container');
+
   if (linea_menu1.hasClass('linea_dritta1')) {
 
 
@@ -104,7 +106,9 @@ function menu_open(){
     false_menu.removeClass('menu_closing');
     false_menu.addClass('menu_opening');
 
-    
+    menu_container.removeClass('hide');
+    menu_container.addClass('menu_container');
+
   }
 
   else if(linea_menu1.hasClass('linea_ruotata1')){
@@ -118,6 +122,9 @@ function menu_open(){
     false_menu.removeClass('menu_opening');
     false_menu.addClass('menu_closing');
     false_menu.addClass('hide');
+
+    menu_container.removeClass('menu_container');
+    menu_container.addClass('hide');
 
 
   }

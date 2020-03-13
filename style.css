@@ -16,6 +16,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+@keyframes opacity {
+  from {opacity: 0;}
+  to {opacity:100%!important}
+  }
+
 a{
   text-decoration: none;
   color:inherit;
@@ -34,7 +39,8 @@ a{
   z-index: -1;
 } */
 
-/* logo */
+/* -----------------------------------
+-----------LOGO--------------------- */
 
 .logo{
   position: fixed;
@@ -46,6 +52,7 @@ a{
   font-size: 35px;
 }
 
+/* MENU */
 .menu{
   position: fixed;
   top: 65px;
@@ -64,8 +71,8 @@ a{
     background-color: none;
   }
   to{
-    width:220vh;
-    height: 220vh;
+    width:250vh;
+    height: 250vh;
     background-color: #f7931e;
   }
 
@@ -75,8 +82,6 @@ a{
   position: fixed;
   top: 80px;
   right:13vw;
-  width:400vw;
-  height: 400vw;
   border-radius: 100%;
   transform: translate(50%, -50%);
   animation:menu_open 1.2s forwards;
@@ -115,9 +120,6 @@ a{
   to{background-color: #f7931e;}
 }
 
-.menu:hover > .linea_menu{
-  animation: orange-white 0.5s forwards;
-}
 
 
 @keyframes ruota_linea1 {
@@ -155,8 +157,49 @@ a{
 }
 
 
+/* MENU LIST */
 
-/* generali MENU PORTFOLIO */
+.menu_container{
+  position: fixed;
+  top: 50vh;
+  left:50vw;
+  width:70vw;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height: 60vh;
+  transform: translate(-50%, -50%);
+  animation: opacity 1.5s forwards;
+}
+
+.menu_list{
+  position: fixed;
+  width:100%;
+  height:auto;
+  top:0%;
+  font-size: 9vw;
+  font-weight: bold;
+  line-height: 13vw;
+}
+
+.menu_contact{
+  position: absolute;
+  width:auto;
+  height: auto;
+  bottom: 0px;
+  font-weight: 400;
+  font-size: 5.5vw;
+  line-height: 8vw;
+}
+
+.menu_line{
+  width: 100%;
+  height: 0.8vw;
+  background-color: white;
+  margin-bottom: 8vw;
+}
+
+/* -----------------------------------
+-----------MENU PORTFOLIO generali--------------------- */
 
 .opacity1{
   opacity:50%!important;
@@ -195,7 +238,8 @@ a{
     display: none!important;
   }
 
-/* line view */
+
+/* LINE VIEW */
 
 
 .nome_e_descrizione_line{
@@ -217,19 +261,26 @@ a{
 
 
 
+    /* -----------------------------------
+    -----------FILTRI--------------------- */
 
-
-/* filtri */
 
 .filtri_container{
   display: none;
 }
 
+/* --------------------------------------------------------------------
+------------------------------------------------------------------- */
+/* ----------- DESKTOP ---------------------------------------------------
+-------------------------------------------------------------------------- */
+ /* ------------------------------------------------------------------------- */
+
 
 
 @media screen and (min-width: 1024px){
 
-  /* logo */
+  /* -----------------------------------
+  -----------LOGO--------------------- */
 
   .logo{
     position: fixed;
@@ -240,6 +291,8 @@ a{
     font-weight: bold;
     font-size: 40px;
   }
+
+  /* MENU */
 
   .menu{
     position: fixed;
@@ -252,19 +305,22 @@ a{
     /* border: 1px solid orange; */
   }
 
+
+
   @keyframes menu_open {
     from{
       width:70px;
       height: 70px;
       background-color: none;
-    }
+      }
     to{
-      width:220vh;
-      height: 220vh;
+      width:220vw;
+      height: 220vw;
       background-color: #f7931e;
+      }
+
     }
 
-  }
 
   .menu_opening{
     position: fixed;
@@ -291,13 +347,13 @@ a{
   .linea_dritta1{
       transform: translate(-50%, -50%);
       top:40%;
-      background-color: #f7931e;
+      background-color: #f7931e!important;
   }
 
   .linea_dritta2{
       transform: translate(-50%, -50%);
       top:60%;
-      background-color: #f7931e;
+      background-color: #f7931e!important;
   }
 
   @keyframes orange-white {
@@ -352,7 +408,52 @@ a{
       background-color: white;
   }
 
-  /* generali MENU PORTFOLIO */
+
+  /* MENU LIST */
+
+  .menu_list{
+    position: fixed;
+    width:45%;
+    height:auto;
+    top:10%;
+    left: 10%;
+    font-size: 40pt;
+    font-weight: bold;
+    line-height: 100pt;
+    /* background-color: orange; */
+  }
+
+  .menu_contact{
+    position: absolute;
+    width:45%;
+    left:50%;
+    height: auto;
+    bottom: 40px;
+    font-weight: 400;
+    font-size: 20pt;
+    line-height: 40pt;
+    /* background-color: red; */
+  }
+
+  .menu_line{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 35pt;
+  }
+
+  @keyframes menu_name_bigger {
+    from{font-size: 40pt;}
+    to{font-size: 50pt;}
+  }
+
+.menu_name:hover{
+  animation: menu_name_bigger 0.5s forwards;
+}
+
+
+  /* -----------------------------------
+  -----------MENU PORTFOLIO generali--------------------- */
 
   .opacity1{
     opacity:30%!important;
@@ -401,9 +502,10 @@ a{
       display: none!important;
     }
 
-  /* line view */
+  /* LINE VIEW */
 
   .image_line{
+    display: block;
     position: fixed;
     right: 5vw;
     bottom: 10vh;
@@ -429,7 +531,7 @@ a{
 
 
 
-  /* image view */
+  /* IMAGE VIEW */
 
   .image_img{
     width: 100%;
@@ -456,7 +558,8 @@ a{
   }
 
 
-/* filtri */
+  /* -----------------------------------
+  -----------FILTRI--------------------- */
 
   .filtri_container{
     position: fixed;
@@ -502,7 +605,8 @@ a{
     opacity:100%!important;
   }
 
-  /* quadratino selezione */
+  /* QUADRATINO SELEZIONE */
+
   .quadratino_filtri{
     position: absolute;
     left: -25px;
@@ -555,23 +659,6 @@ a{
         display: inline-table;
       }
 
-
-      /* menu */
-
-
-      @keyframes menu_open {
-        from{
-          width:70px;
-          height: 70px;
-          background-color: none;
-        }
-        to{
-          width:220vw;
-          height: 220vw;
-          background-color: #f7931e;
-        }
-
-      }
 
 
 }
