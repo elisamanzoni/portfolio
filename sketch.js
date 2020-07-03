@@ -6,7 +6,13 @@ function setup() {
 
   var olympic = select('#container_olympic');
   olympic.mouseClicked(olympic_open);
-  // put setup code here
+
+  var deposito = select('#container_deposito');
+  deposito.mouseClicked(deposito_open);
+
+  var zefir = select('#container_zefir');
+  zefir.mouseClicked(zefir_open);
+
 }
 
 function draw() {
@@ -19,5 +25,23 @@ function olympic_open() {
     description_olympic.removeClass('display_none');
   } else {
     description_olympic.addClass('display_none')
+  }
+}
+
+function deposito_open() {
+  var description_deposito = select('#description_deposito');
+  if (description_deposito.hasClass('display_none')) {
+    description_deposito.removeClass('display_none');
+  } else {
+    description_deposito.addClass('display_none')
+  }
+}
+
+function zefir_open() {
+  var description_zefir = select('#description_zefir');
+  if (description_zefir.hasClass('display_none')) {
+    description_zefir.removeClass('display_none');
+  } else {
+    description_zefir.addClass('display_none')
   }
 }
