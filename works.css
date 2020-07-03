@@ -25,6 +25,8 @@ a{
   left: 50%;
   width: 90vw;
   height: 60px;
+  background-color: white;
+  z-index: 2;
   /* border: 1px solid green; */
 }
 
@@ -49,31 +51,45 @@ a{
 
 #works{
   left: 85px;
-}
-
-
-/* body */
-
-.body{
-  position: absolute;
-  transform: translate(-50%, 0%);
-  left: 50%;
-  width: 90vw;
-  top: 100px;
-  /* border: 1px solid green; */
-}
-
-.home_description{
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-}
-
-.sottolineato{
   background-color: rgb(0, 255, 0);
 }
 
 
+
+/* body */
+
+.false_container{
+  height:80px!important;
+}
+
+.container{
+  position:relative;
+  width:100%;
+  margin-top: 5px;
+  width:90vw;
+  margin-left: 5vw;
+  /* border: 1px solid green; */
+}
+
+.lavori_nomi{
+  display: inline-block;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.nome{
+  margin-left: 30px;
+}
+
+.categoria{
+  margin-left: 82px;
+  margin-top: 5px;
+}
+
+.line_works{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 
@@ -99,19 +115,4 @@ a{
 
 #works{
   left: 150px;
-}
-
-/* body */
-
-.body{
-  width:95vw;
-}
-
-.home_description{
-  position:absolute;
-  font-size: 43px;
-  line-height: 58px;
-  width: 60%;
-}
-
 }

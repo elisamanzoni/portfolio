@@ -51,32 +51,9 @@ a{
   left: 85px;
 }
 
-
-/* body */
-
-.body{
-  position: absolute;
-  transform: translate(-50%, 0%);
-  left: 50%;
-  width: 90vw;
-  top: 100px;
-  /* border: 1px solid green; */
-}
-
-.home_description{
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-}
-
-.sottolineato{
+#about{
   background-color: rgb(0, 255, 0);
 }
-
-
-
-
-
 
 
 
@@ -99,19 +76,4 @@ a{
 
 #works{
   left: 150px;
-}
-
-/* body */
-
-.body{
-  width:95vw;
-}
-
-.home_description{
-  position:absolute;
-  font-size: 43px;
-  line-height: 58px;
-  width: 60%;
-}
-
 }
