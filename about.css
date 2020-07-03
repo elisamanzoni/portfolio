@@ -2,6 +2,7 @@ body{
 font-family: 'Almarai', sans-serif;
 padding:0px;
 margin:0px;
+cursor:default;
 }
 
 /* PHONE */
@@ -21,10 +22,12 @@ a{
 /* header */
 .header{
   position: fixed;
-  transform: translate(-50%, 0%);
-  left: 50%;
+  top:0px;
+  left: 5vw;
   width: 90vw;
   height: 60px;
+  background-color: white;
+  z-index: 2;
   /* border: 1px solid green; */
 }
 
@@ -35,8 +38,7 @@ a{
 
 .header_name{
   position: absolute;
-  font-family: 'Raleway';
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   transform: translate(0%, -50%);
   top:60%;
@@ -56,11 +58,50 @@ a{
 }
 
 
+/* body */
+
+.body{
+  position: absolute;
+  width:90vw;
+  left:5vw;
+  top:70px;
+}
+
+.margin_top{
+  margin-top: 10px;
+}
+
+.titolo{
+  font-size: 24px;
+}
+
+.img{
+  width: 100%;
+}
+
+.descrizione{
+  font-size: 15px;
+}
+
+#line_descrizione{
+  margin-bottom: 20px;
+}
+
+.contact{
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.underline{
+  text-decoration: underline;
+}
 
 
-/* DESKTOP */
 
-@media (min-width: 768px){
+/* TABLET */
+
+@media (min-width: 768px) {
 
 .line{
   height: 3px;
@@ -68,6 +109,7 @@ a{
 
 .header{
   width:95vw;
+  left:2.5vw;
 }
 
 .header_name{
@@ -76,4 +118,56 @@ a{
 
 #works{
   left: 150px;
+}
+
+
+/* body */
+
+.body{
+  position: absolute;
+  width:95vw;
+  left:2.5vw;
+  top:80px;
+}
+
+.margin_top{
+  margin-top: 10px;
+}
+
+.titolo{
+  position:absolute;
+  left: calc(50% + 15px);
+  font-size: 40px;
+}
+
+.img{
+  width: calc(50% - 20px);
+}
+
+.descrizione{
+  position:absolute;
+  left: calc(50% + 20px);
+  font-size: 25px;
+  top: 110px;
+  margin-bottom: 50px;
+}
+
+#line_descrizione{
+  display: none;
+}
+
+.contact{
+  position: relative;
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.underline:hover{
+  color: rgb(0, 255, 0);
+  transition: 0.2s;
 }

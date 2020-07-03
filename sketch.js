@@ -4,6 +4,8 @@ function preload() {
 
 function setup() {
 
+  createCanvas(0,0);
+
   var olympic = select('#container_olympic');
   olympic.mouseClicked(olympic_open);
 
