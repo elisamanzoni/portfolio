@@ -35,8 +35,7 @@ a{
 
 .header_name{
   position: absolute;
-  font-family: 'Raleway';
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   transform: translate(0%, -50%);
   top:60%;

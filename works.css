@@ -37,8 +37,7 @@ a{
 
 .header_name{
   position: absolute;
-  font-family: 'Raleway';
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   transform: translate(0%, -50%);
   top:60%;
@@ -64,7 +63,6 @@ a{
 
 .container{
   position:relative;
-  width:100%;
   margin-top: 5px;
   width:90vw;
   margin-left: 5vw;
@@ -108,9 +106,9 @@ a{
   text-decoration: underline;
 }
 
-/* .display_none{
+.display_none{
   display: none;
-} */
+}
 
 
 
