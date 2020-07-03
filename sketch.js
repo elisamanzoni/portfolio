@@ -16,6 +16,9 @@ function setup() {
   var izi = select('#container_izi');
   izi.mouseClicked(izi_open);
 
+  var diciotti= select('#container_diciotti');
+  diciotti.mouseClicked(diciotti_open);
+
 }
 
 function draw() {
@@ -69,9 +72,30 @@ function zefir_open() {
 
 function izi_open() {
   var description_izi = select('#description_izi');
+  var izi_nome = select('#izi_nome');
+  var izi_arrow = select('#izi_arrow');
   if (description_izi.hasClass('display_none')) {
     description_izi.removeClass('display_none');
+    izi_nome.addClass('color');
+    izi_arrow.addClass('rotate');
   } else {
-    description_izi.addClass('display_none')
+    description_izi.addClass('display_none');
+    izi_nome.removeClass('color');
+    izi_arrow.removeClass('rotate');
+  }
+}
+
+function diciotti_open() {
+  var description_diciotti = select('#description_diciotti');
+  var diciotti_nome = select('#diciotti_nome');
+  var diciotti_arrow = select('#diciotti_arrow');
+  if (description_diciotti.hasClass('display_none')) {
+    description_diciotti.removeClass('display_none');
+    diciotti_nome.addClass('color');
+    diciotti_arrow.addClass('rotate');
+  } else {
+    description_diciotti.addClass('display_none');
+    diciotti_nome.removeClass('color');
+    diciotti_arrow.removeClass('rotate');
   }
 }
