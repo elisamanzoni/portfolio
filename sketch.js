@@ -19,6 +19,15 @@ function setup() {
   var diciotti= select('#container_diciotti');
   diciotti.mouseClicked(diciotti_open);
 
+  var arthur= select('#container_arthur');
+  arthur.mouseClicked(arthur_open);
+
+  var sparkle= select('#container_sparkle');
+  sparkle.mouseClicked(sparkle_open);
+
+  var whyracism= select('#container_whyracism');
+  whyracism.mouseClicked(whyracism_open);
+
 }
 
 function draw() {
@@ -97,5 +106,50 @@ function diciotti_open() {
     description_diciotti.addClass('display_none');
     diciotti_nome.removeClass('color');
     diciotti_arrow.removeClass('rotate');
+  }
+}
+
+function arthur_open() {
+  var description_arthur = select('#description_arthur');
+  var arthur_nome = select('#arthur_nome');
+  var arthur_arrow = select('#arthur_arrow');
+  if (description_arthur.hasClass('display_none')) {
+    description_arthur.removeClass('display_none');
+    arthur_nome.addClass('color');
+    arthur_arrow.addClass('rotate');
+  } else {
+    description_arthur.addClass('display_none');
+    arthur_nome.removeClass('color');
+    arthur_arrow.removeClass('rotate');
+  }
+}
+
+function sparkle_open() {
+  var description_sparkle = select('#description_sparkle');
+  var sparkle_nome = select('#sparkle_nome');
+  var sparkle_arrow = select('#sparkle_arrow');
+  if (description_sparkle.hasClass('display_none')) {
+    description_sparkle.removeClass('display_none');
+    sparkle_nome.addClass('color');
+    sparkle_arrow.addClass('rotate');
+  } else {
+    description_sparkle.addClass('display_none');
+    sparkle_nome.removeClass('color');
+    sparkle_arrow.removeClass('rotate');
+  }
+}
+
+function whyracism_open() {
+  var description_whyracism = select('#description_whyracism');
+  var whyracism_nome = select('#whyracism_nome');
+  var whyracism_arrow = select('#whyracism_arrow');
+  if (description_whyracism.hasClass('display_none')) {
+    description_whyracism.removeClass('display_none');
+    whyracism_nome.addClass('color');
+    whyracism_arrow.addClass('rotate');
+  } else {
+    description_whyracism.addClass('display_none');
+    whyracism_nome.removeClass('color');
+    whyracism_arrow.removeClass('rotate');
   }
 }
