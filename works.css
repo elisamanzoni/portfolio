@@ -74,11 +74,11 @@ a{
 .lavori_nomi{
   display: inline-block;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 24px;
 }
 
 .nome{
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .categoria{
