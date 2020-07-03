@@ -21,8 +21,8 @@ a{
 /* header */
 .header{
   position: fixed;
-  transform: translate(-50%, 0%);
-  left: 50%;
+  top:0px;
+  left: 5vw;
   width: 90vw;
   height: 60px;
   background-color: white;
@@ -147,6 +147,7 @@ a{
 
 .header{
   width:95vw;
+  left:2.5vw;
 }
 
 .header_name{
@@ -155,4 +156,58 @@ a{
 
 #works{
   left: 150px;
+}
+
+
+/* body */
+
+.container{
+  margin-top: 5px;
+  width:95vw;
+  margin-left: 2.5vw;
+  /* border: 1px solid green; */
+}
+
+.lavori_nomi{
+  font-size: 30px;
+}
+
+.nome{
+  position: absolute;
+  left:14vw;
+  transition: 0.5s;
+  transition-property: background-color;
+}
+
+.container:hover .nome{
+  background-color: rgb(0, 255, 0);
+  transition: 0.2s;
+}
+/*
+.container:hover .display_none{
+  display: contents!important;
+} */
+
+.categoria{
+  position:absolute;
+  left:45vw;
+}
+
+.img{
+  width: calc(50% - 10px);
+  margin-left: 0px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.work_description_total{
+  position: absolute;
+  left:45vw;
+  width:30%;
+  top: 40px;
+}
+
+.work_description{
+  font-size: 25px;
+  margin-top: 20px;
 }
