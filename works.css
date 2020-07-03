@@ -83,13 +83,34 @@ a{
 
 .categoria{
   margin-left: 82px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .line_works{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.img{
+  width: calc(100% - 82px);
+  margin-left: 82px;
+  margin-top: 10px;
+}
+
+.work_description{
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 82px;
+  margin-top: 10px;
+}
+
+.link{
+  text-decoration: underline;
+}
+
+/* .display_none{
+  display: none;
+} */
 
 
 
