@@ -105,6 +105,10 @@ a{
   left: 150px;
 }
 
+#home{
+  right:0px;
+}
+
 /* body */
 
 .body{
