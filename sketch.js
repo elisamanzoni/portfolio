@@ -27,8 +27,17 @@ function setup() {
   var sparkle= select('#container_sparkle');
   sparkle.mouseClicked(sparkle_open);
 
+  var assunta= select('#container_assunta');
+  assunta.mouseClicked(assunta_open);
+
+  var mengoni= select('#container_mengoni');
+  mengoni.mouseClicked(mengoni_open);
+
   var whyracism= select('#container_whyracism');
   whyracism.mouseClicked(whyracism_open);
+
+  var haaring= select('#container_haaring');
+  haaring.mouseClicked(haaring_open);
 
 }
 
@@ -141,6 +150,36 @@ function sparkle_open() {
   }
 }
 
+function assunta_open() {
+  var description_assunta = select('#description_assunta');
+  var assunta_nome = select('#assunta_nome');
+  var assunta_arrow = select('#assunta_arrow');
+  if (description_assunta.hasClass('display_none')) {
+    description_assunta.removeClass('display_none');
+    assunta_nome.addClass('color');
+    assunta_arrow.addClass('rotate');
+  } else {
+    description_assunta.addClass('display_none');
+    assunta_nome.removeClass('color');
+    assunta_arrow.removeClass('rotate');
+  }
+}
+
+function mengoni_open() {
+  var description_mengoni = select('#description_mengoni');
+  var mengoni_nome = select('#mengoni_nome');
+  var mengoni_arrow = select('#mengoni_arrow');
+  if (description_mengoni.hasClass('display_none')) {
+    description_mengoni.removeClass('display_none');
+    mengoni_nome.addClass('color');
+    mengoni_arrow.addClass('rotate');
+  } else {
+    description_mengoni.addClass('display_none');
+    mengoni_nome.removeClass('color');
+    mengoni_arrow.removeClass('rotate');
+  }
+}
+
 function whyracism_open() {
   var description_whyracism = select('#description_whyracism');
   var whyracism_nome = select('#whyracism_nome');
@@ -153,5 +192,20 @@ function whyracism_open() {
     description_whyracism.addClass('display_none');
     whyracism_nome.removeClass('color');
     whyracism_arrow.removeClass('rotate');
+  }
+}
+
+function haaring_open() {
+  var description_haaring = select('#description_haaring');
+  var haaring_nome = select('#haaring_nome');
+  var haaring_arrow = select('#haaring_arrow');
+  if (description_haaring.hasClass('display_none')) {
+    description_haaring.removeClass('display_none');
+    haaring_nome.addClass('color');
+    haaring_arrow.addClass('rotate');
+  } else {
+    description_haaring.addClass('display_none');
+    haaring_nome.removeClass('color');
+    haaring_arrow.removeClass('rotate');
   }
 }

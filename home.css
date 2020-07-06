@@ -50,6 +50,11 @@ a{
   left: 85px;
 }
 
+#home{
+  background-color: rgb(0, 255, 0);
+  right:0px;
+}
+
 
 /* body */
 
