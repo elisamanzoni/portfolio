@@ -6,6 +6,13 @@ function setup() {
 
   createCanvas(0,0);
 
+  var contact = select('#contact');
+  contact.mouseClicked(contact_open);
+
+  var exit = select('#exit');
+  exit.mouseClicked(contact_close);
+
+
   var olympic = select('#container_olympic');
   olympic.mouseClicked(olympic_open);
 
@@ -44,6 +51,39 @@ function setup() {
 function draw() {
   // put drawing code here
 }
+
+function contact_open() {
+  var contact = select('#contact');
+  var contact_container = select ('#contact_container');
+  if (contact.hasClass("green_background")){
+    contact.removeClass("green_background");
+    contact_container.removeClass('contact_container');
+    contact_container.addClass('contact_container_sparito');
+
+  } else{
+    contact.addClass("green_background");
+    contact_container.removeClass('contact_container_sparito');
+    contact_container.removeClass('display_none');
+    contact_container.addClass('contact_container');
+  }
+}
+
+function contact_close() {
+  var contact = select('#contact');
+  var contact_container = select ('#contact_container');
+  if (contact.hasClass("green_background")){
+    contact.removeClass("green_background");
+    contact_container.removeClass('contact_container');
+    contact_container.addClass('contact_container_sparito');
+  } else{
+    contact.addClass("green_background");
+    contact_container.removeClass('contact_container_sparito');
+    contact_container.removeClass('display_none');
+    contact_container.addClass('contact_container');
+  }
+}
+
+
 
 function olympic_open() {
   var description_olympic = select('#description_olympic');
