@@ -39,7 +39,7 @@ a{
 .header_name{
   position: absolute;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   transform: translate(0%, -50%);
   top:60%;
 }
@@ -50,12 +50,12 @@ a{
 }
 
 #works{
-  left: 80px;
+  left: 75px;
   background-color: rgb(0, 255, 0);
 }
 
 #contact{
-  left:160px;
+  left:150px;
 }
 
 #about{
@@ -106,7 +106,7 @@ a{
 }
 
 .nome{
-  margin-left: 25px;
+  margin-left: 23px;
   transition: 0.5s;
   transition-property: background-color;
   cursor: pointer;
@@ -122,7 +122,7 @@ a{
 }
 
 .categoria{
-  margin-left: 82px;
+  margin-left: 75px;
   margin-top: 3px;
 }
 
@@ -132,15 +132,15 @@ a{
 }
 
 .img{
-  width: calc(100% - 82px);
-  margin-left: 82px;
+  width: calc(100% - 75px);
+  margin-left: 75px;
   margin-top: 10px;
 }
 
 .work_description{
   font-weight: 400;
   font-size: 20px;
-  margin-left: 82px;
+  margin-left: 75px;
   margin-top: 10px;
 }
 
