@@ -39,7 +39,7 @@ a{
 .header_name{
   position: absolute;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   transform: translate(0%, -50%);
   top:60%;
 }
@@ -50,13 +50,23 @@ a{
 }
 
 #works{
-  left: 85px;
+  left: 80px;
   background-color: rgb(0, 255, 0);
+}
+
+#contact{
+  left:160px;
+}
+
+#about{
+
 }
 
 #home{
   right:0px;
 }
+
+
 
 
 
@@ -165,6 +175,10 @@ a{
 
 #works{
   left: 150px;
+}
+
+#contact{
+  left:300px;
 }
 
 
