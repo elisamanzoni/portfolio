@@ -13,6 +13,7 @@ function setup() {
   exit.mouseClicked(contact_close);
 
 
+
   var olympic = select('#container_olympic');
   olympic.mouseClicked(olympic_open);
 
