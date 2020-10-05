@@ -223,7 +223,8 @@ a{
 
 .coding:hover:after{
   color: rgb(0, 255, 0);
-  content: " (clicca per provare un mio esperimento)";
+  /* content: " (clicca per provare un mio esperimento)"; */
+  content: " (click to try one of my experiments)";
 }
 
 .link_scopri{
@@ -439,7 +440,8 @@ a{
 
 .coding:hover:after{
   color: rgb(0, 255, 0);
-  content: " (clicca per provare un mio esperimento)";
+  /* content: " (clicca per provare un mio esperimento)"; */
+  content: " (click to try one of my experiments)";
 }
 
 
