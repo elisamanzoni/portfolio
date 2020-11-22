@@ -252,6 +252,11 @@ a{
 .work_description{
   font-weight: 400;
   font-size: 20px;
+  margin-top: 5px;
+}
+
+.margin_top{
+  margin-top: 15px;
 }
 
 .link{
@@ -399,7 +404,6 @@ a{
   margin-top: 5px;
   width:95vw;
   margin-left: 2.5vw;
-  /* border: 1px solid green; */
 }
 
 .lavori_nomi{
@@ -408,7 +412,7 @@ a{
 
 .nome{
   position: absolute;
-  left:14vw;
+  /* left:14vw; */
   transition: 0.5s;
   transition-property: background-color!important;
 }
@@ -417,21 +421,23 @@ a{
   background-color: rgb(0, 255, 0);
   transition: 0.2s;
 }
-/*
-.container:hover .display_none{
-  display: contents!important;
-} */
 
 .categoria{
-  position:absolute;
-  left:45vw;
+  position:relative;
+  margin-top: 10px;
 }
 
 .img{
-  width: calc(100% - 17vw);
-  margin-left: 17vw;
-  margin-top: 30px;
+  width: calc(100% - 5vw);
+  /* margin-left: 17vw; */
+  margin-top: 20px;
   display: inline-flex;
+}
+
+.line_works{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width:100%;
 }
 
 /* .work_description_total{
@@ -444,19 +450,23 @@ a{
 .work_description_total{
   position: relative;
   display: inline-block;
-  margin-top:0px;
-  margin-left: 17vw;
+  margin-top:10px;
+  /* margin-left: 17vw; */
   width: 50%;
 }
 
 .work_description{
   font-size: 22px;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-left: 0px;
 }
 
 .link{
   line-height: 35px;
+}
+
+.margin_top{
+  margin-top: 20px;
 }
 
 .green:hover{
@@ -472,20 +482,68 @@ a{
 @media (min-width: 1000px){
 
   .img{
+    position: absolute;
     width: 50%;
-    /* height:calc(100% - 100px); */
-    margin-left: 0px;
-    margin-top: 30px;
-    display: inline-flex;
+    left:0px;
+    top:-10px;
     /* border: 1px solid black; */
   }
 
-  .work_description_total{
+  .container_deposito{
     position: absolute;
-    margin-left: 0vw;
-    left:calc(53% + 10px);
-    width:30%;
-    top: 40px;
+    /* border: 1px solid red; */
+    height: calc(50vw*0.553);
   }
+
+  .container_izi{
+    position: absolute;
+    top: calc(50vw*0.5533 + 130px);
+    height: calc(50vw*0.553);
+    /* border: 1px solid red; */
+  }
+
+  .container_arthur{
+    position: absolute;
+    top: calc(50vw*0.5533*2 + 175px);
+    /* border: 1px solid red; */
+    height: calc(50vw*0.553);
+  }
+
+  .work_description{
+    position: absolute;
+    font-size: 22px;
+    left:50vw;
+  }
+
+  .lavori_nomi{
+    position: absolute;
+    left:50vw;
+  }
+
+  .line_works{
+    position: absolute;
+    top:calc(50vw * 0.553);
+  }
+
+  .work1{
+    position: absolute;
+    top:40px;
+  }
+
+  .work2{
+    position: absolute;
+    top:65px;
+  }
+
+  .work3{
+    position: absolute;
+    top:125px;
+  }
+
+  .work4{
+    position: absolute;
+    top:calc(50vw * 0.553 - 90px);
+  }
+
 
 }
