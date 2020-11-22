@@ -12,7 +12,19 @@ function setup() {
   var exit = select('#exit');
   exit.mouseClicked(contact_close);
 
+//ABOUT
 
+  var education = select('#education');
+  education.mouseClicked(education_open);
+
+  var experience = select('#experience');
+  experience.mouseClicked(experience_open);
+
+  var languages = select('#languages');
+  languages.mouseClicked(languages_open);
+
+
+//WORKS OLD
 
   var olympic = select('#container_olympic');
   olympic.mouseClicked(olympic_open);
@@ -85,6 +97,59 @@ function contact_close() {
 }
 
 
+
+//ABOUT
+
+function education_open() {
+  var education_description = select('#education_description');
+  var education_nome = select('#education_nome');
+  var education_arrow = select('#education_arrow');
+  if (education_description.hasClass('display_none')) {
+    education_description.removeClass('display_none');
+    education_nome.addClass('color');
+    education_arrow.addClass('rotate');
+  } else {
+    education_description.addClass('display_none');
+    education_nome.removeClass('color');
+    education_arrow.removeClass('rotate');
+  }
+}
+
+
+function experience_open() {
+  var experience_description = select('#experience_description');
+  var experience_nome = select('#experience_nome');
+  var experience_arrow = select('#experience_arrow');
+  if (experience_description.hasClass('display_none')) {
+    experience_description.removeClass('display_none');
+    experience_nome.addClass('color');
+    experience_arrow.addClass('rotate');
+  } else {
+    experience_description.addClass('display_none');
+    experience_nome.removeClass('color');
+    experience_arrow.removeClass('rotate');
+  }
+}
+
+
+
+function languages_open() {
+  var languages_description = select('#languages_description');
+  var languages_nome = select('#languages_nome');
+  var languages_arrow = select('#languages_arrow');
+  if (languages_description.hasClass('display_none')) {
+    languages_description.removeClass('display_none');
+    languages_nome.addClass('color');
+    languages_arrow.addClass('rotate');
+  } else {
+    languages_description.addClass('display_none');
+    languages_nome.removeClass('color');
+    languages_arrow.removeClass('rotate');
+  }
+}
+
+
+//WORKS OLD
 
 function olympic_open() {
   var description_olympic = select('#description_olympic');

@@ -200,25 +200,49 @@ a{
   top:70px;
 }
 
-.margin_top{
-  margin-top: 10px;
-}
-
-.titolo{
-  font-size: 24px;
-}
-
-.img{
-  width: 100%;
-}
-
 .descrizione{
-  font-size: 15px;
+  font-size: 28px;
 }
 
-#line_descrizione{
+.descrizione2{
+  margin-top: 50px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
+
+.pokemon:before{
+  cursor:pointer;
+  text-decoration: underline;
+  content: "Pokemon";
+}
+
+.pokemon:hover:after{
+  color: rgb(0, 255, 0);
+  content: " (my favourite one is Charmander)";
+}
+
+.arrighetti:before{
+  cursor:pointer;
+  text-decoration: underline;
+  content: "Valentina Arrighetti";
+}
+
+.arrighetti:hover:after{
+  color: rgb(0, 255, 0);
+  content: " (an italian volleyball player)";
+}
+
+.alvar:before{
+  cursor:pointer;
+  text-decoration: underline;
+  content: "Alvar Aalto";
+}
+
+.alvar:hover:after{
+  color: rgb(0, 255, 0);
+  content: " (a Finnish designer)";
+}
+
 
 .contact{
   font-size: 18px;
@@ -229,6 +253,83 @@ a{
 .underline{
   text-decoration: underline;
 }
+
+.line_description{
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  display: inline-block;
+}
+
+.about_box{
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  /* height: 50px; */
+}
+
+.arrow{
+  position: relative;
+  display:inline-block;
+  right:-7px;
+  width: 15px;
+  top:0px;
+  margin-left: 10px;
+  transform: translate(-50%,-50%);
+  transition: 0.8s;
+}
+
+.rotate{
+  transform: translate(-50%,-50%) rotate(180deg);
+  transition: 0.5s;
+}
+
+.last{
+  margin-bottom: 100px;
+}
+
+.about_description{
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+}
+
+.years{
+  position: absolute;
+  display: inline-block;
+  width: 10%;
+  font-size: 15px;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.description{
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  margin-left: 50px;
+  font-size: 15px;
+  /* border: 1px solid black; */
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.display_none{
+  display: none;
+}
+
+.color{
+  background-color: rgb(0,255,0);
+}
+
+
+
+
 
 
 
@@ -367,44 +468,67 @@ a{
   top:80px;
 }
 
-.margin_top{
-  margin-top: 10px;
-}
-
-.titolo{
-  position:absolute;
-  left: calc(50% + 15px);
-  font-size: 40px;
-}
-
-.img{
-  width: calc(50% - 20px);
-}
 
 .descrizione{
-  position:absolute;
-  left: calc(50% + 20px);
-  font-size: 25px;
+  width: 80vw;
+  font-size: 35px;
+  line-height: 45px;
   top: 110px;
   margin-bottom: 50px;
 }
 
-#line_descrizione{
-  display: none;
+.descrizione2{
+  width: 80vw;
+  font-size: 25px;
+  margin-bottom: 60px;
 }
 
-.contact{
-  position: relative;
-  font-size: 30px;
-  line-height: 40px;
-  margin-top: 20px;
+.about_box{
+  font-size: 25px;
 }
 
-.underline{
-  text-decoration: underline;
-}
 
-.underline:hover{
-  color: rgb(0, 255, 0);
-  transition: 0.2s;
+/* PC */
+
+@media (min-width: 1024px) {
+
+  .descrizione{
+    width: 750px;
+  }
+
+  .descrizione2{
+    width: 800px;
+  }
+
+  .about_box:hover{
+    color: rgb(0, 255, 0);
+    cursor:pointer;
+    transition: 0.2s;
+  }
+
+  .nome:hover{
+    background-color: rgb(0, 255, 0);
+    cursor:pointer;
+    transition: 0.2s;
+  }
+
+  .years{
+    font-size: 20px;
+    /* border: 1px solid black; */
+  }
+
+  .description{
+    margin-left: 70px;
+    font-size: 20px;
+    /* border: 1px solid black; */
+  }
+
+  .about_description{
+    font-size: 20px;
+  }
+
+
+
+
+
 }

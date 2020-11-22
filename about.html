@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <script src="p5.min.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <script src="sketch.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="about.css" rel="stylesheet">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <script src="p5.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="about.css" rel="stylesheet">
 
-    <title>Manzoni Elisa</title>
-    <link rel="shortcut icon" href="images/favicon.png">
-    <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+  <title>Manzoni Elisa</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
 </head>
 
 <body>
@@ -29,36 +30,84 @@
   <div id="contact_container" class=" display_none">
     <div class="exit" id="exit"></div>
     <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
-    <a  class="contact_popup" href="tel:+393486581621">3486581621</a><br>
-    <a  class="contact_popup" href="https://www.behance.net/elisamanzoni">behance/elisamanzoni</a>
+    <a class="contact_popup" href="tel:+393486581621">3486581621</a><br>
+    <a class="contact_popup" href="https://www.behance.net/elisamanzoni">behance/elisamanzoni</a>
   </div>
 
   <div id="body" class="body">
-    <div id="titolo" class="titolo margin_top">
-      <!-- Mi presento <br>
-      sono Elisa Manzoni, -->
 
-      Hello! <br>
-      I'm Elisa Manzoni
+    <div id="descrizione" class="descrizione">
+      Hi! I’m Elisa, a young designer from Politecnico of Milan. I am a lover of <a class="pokemon"></a>, <a class="arrighetti"></a> and <a class="alvar"></a>. <br>
+      My dream in life is to create applications that my mother can use without panicking or asking for my help.
     </div>
-    <img src="images/elisa.png" class="margin_top img">
-    <div id="descrizione" class="descrizione margin_top">
-<!-- ITALIANO -->
-      <!-- dipendente fin da piccola dai videogiochi e amante delle illustrazioni digitali, ho scelto quasi automaticamente di studiare grafica al liceo artistico e successivamente Design della Comunicazione al Politecnico di Milano.
-      L’amore per la grafica è nato praticamente subito, ma il percorso universitario mi ha permesso di approfondire l’importanza della comunicazione in ogni sua sfaccettatura e quanto questa cambi in base alla persona con la quale ci si rapporta. <br><br>
-      Cresciuta in un paesino nella bergamasca dove l’evento più mondano è la festa dell’oratorio dove tutti si conoscono e ognuno dà una mano, tendo a lanciarmi sempre in nuove esperienze e a rapportarmi facilmente con gli altri. La mia propensione per i lavori di gruppo deriva anche dalla pallavolo, sport che pratico da quando ne ho memoria, questo spiega il mio carattere determinato e deciso. -->
+    <div id="descrizione2" class="descrizione2">
+      I live in a small city near Milan, I play volleyball and I love trekking.
+      I prefer functionality over aesthetics. In my opinion, good communication is effective when it is understood immediately without too many words, but I also love to experiment and amaze people.
+    </div>
+    <div id='line' class='line line_description'></div>
+    <div id='education' class='about_box education'>
+      <a id="education_nome" class="nome">EDUCATION</a>
+      <img src="images/arrow.png" id="education_arrow" class="arrow">
+    </div>
+    <div id="education_description" class="about_description display_none">
+      <div id="years" class="years">
+        2020/<br>
+        Now<br><br>
+        2020<br><br><br><br>
+        2017 <br><br><br>
+      </div>
+      <div id="description" class="description">
+        <a class="bold">Digital and Interaction Design</a> <br>
+        Politecnico of Milan <br><br>
+        <a class="bold">Communication Design degree</a><br>
+        Politecnico of Milan, <br>
+        109/110 <br><br>
+        <a class="bold">Artistic diploma</a> <br>
+        Artistic High School, Bergamo, <br>
+        92/100
+      </div>
+    </div>
+    <div id='line' class='line line_description'></div>
 
-<!-- INGLESE -->
-      since I was a child I was addicted to video games and a digital illustrations lover. I automatically chose to study Graphic Design at the Art High School and then Communication Design at Politecnico of Milan.
-      The love for graphic design was born immediately, my university career allowed me to study in deep the importance of communication in all its facets and how much this changes based on the person you relate to. <br><br>
-      Grown up in a small city in Lombardy, where the most exited event is the oratory festival, I tend to embark on new experiences and to relate easily with others. My inclination for team works also derives from volleyball, a sport that I practised since I was young, this explains my determined and decisive nature.
+
+    <div id='experience' class='about_box education'>
+      <a id="experience_nome" class="nome">EXPERIENCE</a>
+      <img src="images/arrow.png" id="experience_arrow" class="lavori_nomi arrow">
+      </div>
+
+      <div id="experience_description" class="about_description display_none">
+        <div id="years" class="years">
+          2020/<br>
+          Now<br><br>
+          2020/<br>
+          2017 <br><br><br>
+        </div>
+        <div id="description" class="description">
+          <a class="bold">Social Media Manager</a> <br>
+          Stage - Denani s.r.l. <br><br>
+          <a class="bold">Freelance graphic works</a><br>
+          Social media management and creation of advertising projects for food and parish events. <br>
+	         Coordinated image production for small organizations such as the folk  group “La Garibaldina”. <br>
+	          Creation of logos, flyers and layouts for websites on the international  platform “99designs”.
+        </div>
+      </div>
+
+    <div id='line' class='line line_description'></div>
+
+
+    <div id='languages' class='about_box education'>
+      <a id="languages_nome" class="nome">LANGUAGES</a>
+      <img src="images/arrow.png" id="languages_arrow" class="lavori_nomi arrow">
     </div>
-    <div id="line_descrizione" class="line margin_top"> </div>
-    <div id="contact_link" class="contact">
-      Mail: <a class="underline" href="mailto:elisamanzoni98@gmail.com"> elisamanzoni98@gmail.com </a><br>
-      Phone: <a  class="underline" href="tel:+393486581621"> 3486581621 </a><br>
-      Behance: <a  class="underline" href="https://www.behance.net/elisamanzoni">@elisamanzoni</a>
-    </div>
+      <div id="languages_description" class="about_description display_none">
+          <a class="bold">Italian</a> - Mother tongue <br>
+          <a class="bold">English</a> - Fluent, certification: FCE B2 - grade C <br>
+          <a class="bold">International communication</a> - expert in Italian gestures
+      </div>
+
+    <div id='line' class='line line_description last'></div>
+
+
   </div>
 
 </body>
