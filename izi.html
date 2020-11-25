@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="izi.css" rel="stylesheet">
+
+    <title>Manzoni Elisa</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+</head>
+
+<body>
+  <div id="header" class="header">
+    <a href="about.html" id="about" class="header_name">ABOUT</a>
+    <a href="works.html" id="works" class="header_name">WORKS</a>
+    <a id="contact" class="header_name">CONTACT</a>
+    <a href="index.html" id="home" class="header_name">ME</a>
+    <div id="line_header" class="line line_header"></div>
+  </div>
+
+  <div id="contact_container" class="contact_container_sparito display_none">
+    <div class="exit" id="exit"></div>
+    <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
+    <a  class="contact_popup" href="tel:+393486581621">3486581621</a><br>
+    <a  class="contact_popup" target="_blank" href="https://www.behance.net/elisamanzoni">behance/elisamanzoni</a><br>
+    <a  class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
+  </div>
+
+<div id="body">
+  <div id="container" class="false_container container"></div>
+    <div id="main-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='title'><a class='color'> Izi photo mosaic</a></div>
+        Every day milion of people surf on the net.
+        The goal of this web experience is to make more people collaborate in a productive way. <br>
+        <div class='question bold'>Why should people collaborate on the net?</div>
+        In the world there are a lot of fanbases that share their passion.
+        Whenever a singer is about to release a music album, fans go to great lengths to find out something about it.
+        Here comes the idea to create a “photo mosaic”: an album cover created by many small images.
+        Fans have to send a picture of themselves to discover the album cover, because this picture will be one of the small images that will complete the album cover.
+        </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        Team: <br>
+        - 4 students<br><br>
+        My main role:<br>
+        - UI/UX designer<br>
+        - Programmer<br>
+        - Visual designer<br><br>
+        Tools<br>
+        - HTML, CSS<br>
+        - P5 library <br>
+        - Firebase
+      </div>
+    </div>
+
+    <div id="main-images" class="container">
+      <img src="images/izi.png" class="img">
+      <img src="images/izi.png" class="img margin_left">
+    </div>
+
+    <div id="secondary-description" class="container process bold margin_top">
+      The process
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+        <a class='bold'>1. Define the user journey and tools</a> <br>
+        The goal was to create a simple and intuitive web experience, so we designed only 3 pages, one with instructions, one where people can take the picture and one with the mosaic.
+        We also the defined the software scheme: everytime that a person send a picture, it will be stored in a digital space (Firebase) and than uploaded in the mosaic in the right position.
+        </div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/deposito.png" class="img">
+        <img src="images/deposito.png" class="img">
+      </div>
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+        <a class='bold'>2. Define the graphics</a> <br>
+        We decided to use a simple graphic that remebers the singer’s style. We wanted to enhance the mosaic.<br><br><br><br><br>
+        </div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/deposito.png" class="img">
+        <img src="images/deposito.png" class="img">
+      </div>
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+        <a class='bold'>3. Create the algorithm</a> <br>
+        We use the P5 library to code this project. It wasn’t easy to create the algorithm hat would allow the creation of the mosaic, infact we did a lot of tests.
+  At the end we created an algorithm that inserts the user picture in the position where there is the highest brightness affinity.<br><br>
+        </div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/deposito.png" class="img">
+        <img src="images/deposito.png" class="img">
+      </div>
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+      <a class='bold'>  4. Try it!</a><br>
+        We publish the website but the majority of picture were made by ourselves. Only a small group of people tried it, everyone was impressed by the result: the mosaic was very similar to the album cover.
+         <a class="link" target="_blank" href="https://drawwithcode.github.io/2019-group-10-1/">Try it yourself!</a>
+        <br><br><br>
+        </div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/deposito.png" class="img">
+        <img src="images/deposito.png" class="img">
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+</body>
+
+
+</html>

@@ -85,7 +85,7 @@ a{
     padding: 40px 15px 20px 15px;
     opacity: 1;
     font-size: 20px;
-    height: 85px;
+    height: 120px;
     text-align: center;
   }
 }
@@ -97,7 +97,7 @@ a{
     padding: 40px 15px 20px 15px;
     opacity: 1;
     font-size: 20px;
-    height: 85px;
+    height: 120px;
     text-align: center;
   }
   to{
@@ -124,7 +124,7 @@ a{
   line-height: 30px;
   text-align: center;
   opacity: 1;
-  height: 85px;
+  height: 120px;
   animation: container_open 0.5s;
   /* border: 2px solid black; */
 }
@@ -322,7 +322,7 @@ a{
     padding: 60px 20px 20px 20px;
     opacity: 1;
     font-size: 30px;
-    height: 140px;
+    height: 180px;
     text-align: center;
   }
 }
@@ -334,7 +334,7 @@ a{
     padding: 60px 20px 20px 20px;
     opacity: 1;
     font-size: 30px;
-    height: 140px;
+    height: 180px;
     text-align: center;
   }
   to{
@@ -361,7 +361,7 @@ a{
   line-height: 45px;
   text-align: center;
   opacity: 1;
-  height: 140px;
+  height: 180px;
   animation: container_open 0.5s;
   /* border: 2px solid black; */
 }
