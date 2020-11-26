@@ -265,6 +265,11 @@ a{
   color:rgb(0,255,0);
 }
 
+.img_long{
+  width: 96%;
+  border: 1px solid black;
+}
+
 
 
 
