@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="jukebox.css" rel="stylesheet">
+
+    <title>Manzoni Elisa</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+</head>
+
+<body>
+  <div id="header" class="header">
+    <a href="about.html" id="about" class="header_name">ABOUT</a>
+    <a href="works.html" id="works" class="header_name">WORKS</a>
+    <a id="contact" class="header_name">CONTACT</a>
+    <a href="index.html" id="home" class="header_name">ME</a>
+    <div id="line_header" class="line line_header"></div>
+  </div>
+
+  <div id="contact_container" class="contact_container_sparito display_none">
+    <div class="exit" id="exit"></div>
+    <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
+    <a  class="contact_popup" href="tel:+393486581621">3486581621</a><br>
+    <a  class="contact_popup" target="_blank" href="https://www.behance.net/elisamanzoni">behance/elisamanzoni</a><br>
+    <a  class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
+  </div>
+
+<div id="body">
+  <div id="container" class="false_container container"></div>
+    <div id="main-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='title'><a class='color'> Memory Jukebox</a></div>
+        Brain activity gets worse the older we become, causing memory and decision making problems: this is especially true if an elderly person has to deal with Alzheimer’s disease as well.
+        This knowledge was a trigger to our design work as we wants to slow down this process.  <br>
+        <div class='question bold'>How to improve the memory <br>of the elderly in a fun way?</div>
+        Most games designed for seniors use <a class='bold'>music as therapy</a>.
+        The memory of the elderly is trained when they listen to songs from their youth.
+        Thus was born Memory Jukebox: a game that recalls a mix between a classic radio and a juke box.
+        When each piece is swiped through the apposite space, part of an old song is activated: <a class='bold'>the goal is to swipe all the pieces in the right order, in order to activate the full song.</a>
+
+        </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        Team: <br>
+        - 4 students<br><br>
+        My main role:<br>
+        - Arduino programmer<br>
+        - Low-fidelity prototype creator<br>
+        - Interaction designer<br>
+        - User experience designer<br><br>
+        My secondary role:<br>
+        - User researcher <br>
+        - Visual designer
+      </div>
+    </div>
+
+    <div id="main-images" class="container">
+      <iframe width="420" height="315" src="https://www.youtube.com/watch?v=XHa1DRtHyGs&feature=youtu.be&ab_channel=GosiaPostrozny"> </iframe>
+    </div>
+
+    <div id="secondary-description" class="container process bold margin_top">
+      The process
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+        <a class='bold'>1. User research and definition of the concept</a> <br>
+        We did a research to find out which techniques are used to prevent demeza senile. We have found that many senior centers use karaoke and music therapy.
+        No matter the age or the disease, it is always good to practice your brain and work on mental condition. Having this in mind the idea of Memory Jukebox was born.
+        After deep research about illnesses among elderly people we created our persona to have a sense of knowledge who will be a user of our game.
+        </div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/jukebox1.png" class="img">
+        <img src="images/jukebox2.png" class="img">
+      </div>
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+        <a class='bold'>2. Define the user interaction</a> <br>
+        The goal was to create an entertaining game, which is easy to understand and use for people with different stages of an illness. We thought of creating easy-to-handle cubes, a few easy-to-press buttons and lights that make interaction more intuitive.
+        <br><br></div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/jukebox3.png" class="img border">
+        <img src="images/jukebox4.png" class="img border">
+      </div>
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+        <a class='bold'>3. Define and test the technologies</a> <br>
+        To create the game we decided to use an Arduino Uno, a DFPlayer to play the music and an RFID reader to read the cubes connected to the RFID tags.
+        To make the interaction clearer we used a rgb led strip.
+        After several tests we arrived at the working prototype.
+        <br><br></div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/jukebox.png" class="img">
+        <img src="images/jukebox5.png" class="img border">
+      </div>
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+      <a class='bold'>  4. Improve user experience through an app</a><br>
+      To make the experience more interesting we designed an App. This App is an upgrade to the toy: not necessary to play but it unlocks many features such as inviting friends or personal selection of songs. In case the user doesn’t want it, random/system songs will be played.
+      App is designed for elderly people, which will be users of the toy. Having this in mind we had to follow strict rules related to designing for people with some disabilities and who might not be used to approach apps and technology.
+        </div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/jukebox6.png" class="img border">
+        <img src="images/jukebox7.png" class="img border">
+      </div>
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+        <a class='bold'>5. Design the high-fidelity prototype</a><br>
+      The goal was to make a game that is easily portable and simple to use. Taking inspiration from the "game of 15" and from the old stereos, we thought of making a cube of 20cm. On the top there will be the space where the user will swipe the pieces.
+       <br><br></div>
+      </div>
+      <div id="main-description-2" class='container-small margin_left'>
+        <img src="images/jukebox8.png" class="img border">
+        <img src="images/jukebox9.png" class="img">
+      </div>
+    </div>
+
+    <div id="secondary-description" class="container">
+      <div id="main-description-1" class='container-small'>
+        <div class='width'>
+        <a class='bold'>6. Realize and test the final prototype</a><br>
+      We are still working on this project, we have to 3D print the model and assemble all the pieces. We can't wait to let our grandparents try the game!
+    <br><br></div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+</body>
+
+
+</html>
