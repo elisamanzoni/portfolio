@@ -430,6 +430,15 @@ a{
   /* border: 1px solid green; */
 }
 
+.video{
+  position:relative;
+  display: inline-block;
+  margin-top: 5px;
+  width:48%!important;
+  height: calc(48%*0.5);
+  /* border: 1px solid green; */
+}
+
 
 .width{
   position: relative;
@@ -468,6 +477,15 @@ a{
     display: inline-block;
     margin-top: 5px;
     width:48%;
+    /* border: 1px solid green; */
+  }
+
+  .video{
+    position:relative;
+    display: inline-block;
+    margin-top: 5px;
+    width:48%;
+    height: calc(48%*0.5);
     /* border: 1px solid green; */
   }
 
