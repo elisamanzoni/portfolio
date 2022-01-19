@@ -1,188 +1,208 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <script src="p5.min.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <script src="sketch.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="works.css" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link href="style_custom.css" rel="stylesheet">
+      <script src="p5.min.js"></script>
+      <script src="p5.sound.min.js"></script>
+      <script src="sketch.js"></script>
     <title>Manzoni Elisa</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
-</head>
 
-<body>
-  <div id="header" class="header">
-    <a href="about.html" id="about" class="header_name">ABOUT</a>
-    <a href="works.html" id="works" class="header_name">WORKS</a>
-    <a id="contact" class="header_name">CONTACT</a>
-    <a href="index.html" id="home" class="header_name">ME</a>
-    <div id="line_header" class="line line_header"></div>
-  </div>
+  </head>
+  <body class="bg-black">
 
-  <div id="contact_container" class="contact_container_sparito display_none">
-    <div class="exit" id="exit"></div>
-    <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
-    <a  class="contact_popup" href="tel:+393486581621">3486581621</a><br>
-    <a  class="contact_popup" target="_blank" href="https://www.behance.net/elisamanzoni">behance/elisamanzoni</a><br>
-    <a  class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
-  </div>
-
-<div id="body">
-  <div id="container" class="false_container container"></div>
-
-  <div id="container" class="container container_deposito">
-      <div id="categoria" class="lavori_nomi categoria color">
-        Deposito Cinerario
-    </div>
-        <div id="work_description" class="work_description work1">
-          Communicative machine speculating on death
-        </div>
-        <img src="images/deposito.png" class="img">
-        <div id="work_description2" class="work_description work2 margin_top">
-          University project <br>
-          Sep 2019 - Mar 2020
-        </div>
-        <div id="work_description2" class="work_description work3 margin_top">
-          Skills: <br>
-          - Digital interaction <br>
-          - UI / UX <br>
-          - Web programming <br>
-          - Space design
-        </div>
-        <div id="work_description3" class="work_description work4 link margin_top">
-          <a href="deposito.html" class="green"> Watch the complete project → </a> <br>
-          <!-- <a target="_blank" href="https://speculativeedu.eu/case-study-communicative-machines-speculating-on-death/" class="green"> Mention on SpeculativeEdu → </a> </div> -->
+    <!-- navbar -->
+    <div class="row navbar_size mx-0 pt-2 pb-2 text-white position-fixed w-100 bg-black padding-row" style="border-color:white!important; z-index:5">
+      <div class="col d-flex align-items-end">
+        <a class="ME text-white" href="index.html"></a>
       </div>
-    <div id="line_works" class="line line_works"></div>
-  </div>
-
-
-  <div id="container" class="container container_izi">
-      <div id="categoria" class="lavori_nomi categoria color">
-        Izi photo mosaic
-    </div>
-        <div id="work_description" class="work_description work1">
-          Common digital space that invites users to collaborate
-        </div>
-        <img src="images/izi.png" class="img">
-        <div id="work_description2" class="work_description work2 margin_top">
-          University project <br>
-          Dec 2019 - Jan 2020
-        </div>
-        <div id="work_description2" class="work_description work3 margin_top">
-          Skills: <br>
-          - Digital interaction <br>
-          - UI / UX <br>
-          - Web programming
-        </div>
-        <div id="work_description3" class="work_description work4 link margin_top">
-          <a href="izi.html" class="green"> Watch the complete project → </a> <br>
-            <a target="_blank" href="https://drawwithcode.github.io/2019-group-10-1/" class="green"> Or try it here → </a> <br>
+      <div class="col text-end fs-6c d-flex align-items-end justify-content-end ">
+        <a href="about.html" class=" mx-md-3 mx-2 hover_bg_green text-white">About</a>
+        <a href="works.html" class=" mx-md-3 mx-2 hover_bg_green  text-main">Works</a>
+        <a class=" mx-md-3 mx-2 hover_bg_green  text-white" id="contact">Contact</a>
       </div>
-    <div id="line_works" class="line line_works"></div>
-  </div>
-
-  <div id="container" class="container container_jukebox">
-      <div id="categoria" class="lavori_nomi categoria">
-        <a class='color'>Memory Jukebox</a> <a class="green2">  work in progress </a>
     </div>
-        <div id="work_description" class="work_description work1">
-          Interactive music toy to prevent senile dementia
-        </div>
-        <img src="images/jukebox.png" class="img">
-        <div id="work_description2" class="work_description work2 margin_top">
-          University project <br>
-          Nov 2020 - Now
-        </div>
-        <div id="work_description2" class="work_description work3 margin_top">
-          Skills: <br>
-          - Prototyping <br>
-          - User experience <br>
-          - User research <br>
-          - C++ programming
-        </div>
-        <div id="work_description3" class="work_description work4 link margin_top">
-          <a href="jukebox.html" class="green"> Watch the complete project → </a> <br>
 
+<!-- contact -->
+    <div id="contact_container" class="contact_container_sparito display_none">
+      <div class="exit" id="exit"></div>
+      <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
+      <a  class="contact_popup" href="tel:+393486581621">3486581621</a><br>
+      <a  class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
+    </div>
+
+<!-- spazio da navbar -->
+    <div class="pt-5">
+    </div>
+
+    <!-- animus -->
+    <div class="row py-5 px-md-5 px-4 text-white work" id="easydream" onclick="changePage(this)" href="index.html">
+      <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 ">
+        <img src="images/easydream.png" class="works_img">
       </div>
-    <div id="line_works" class="line line_works"></div>
-  </div>
+      <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 d-flex align-items-stretch">
+        <div class="row">
+          <div class="col-12">
+            <div class="fs-2c mt-lg-0 mt-3">
+              easyDream </div>
+            <div class="fs-3c" >
+              A new way to inspire people to choose their next travel destination </div>
 
+            <div  class="mt-2 fs-6c fw-lighter opacity">
+              Winner project of Reply Creative Challenge 2021 </div>
 
-  <div id="container" class="container container_arthur">
-      <div id="categoria" class="lavori_nomi categoria color">
-        Arthur's Chronicles
-    </div>
-        <div id="work_description" class="work_description work1">
-          Platform video game inspired by "The sword in the stone"
-        </div>
-        <img src="images/arthur.png" class="img">
-        <div id="work_description2" class="work_description work2 margin_top">
-          University project <br>
-          Feb 2019 - May 2019
-        </div>
-        <div id="work_description2" class="work_description work3 margin_top">
-          Skills: <br>
-          - 3D modeling <br>
-          - Graphic design <br>
-          - Web programing
-        </div>
-        <div id="work_description3" class="work_description work4 link margin_top">
-            <a target="_blank" href="https://elisamanzoni.github.io/arthurschronicles/" class="green"> Try it here → </a> <br>
-      </div>
-    <div id="line_works" class="line line_works"></div>
-  </div>
+            <div  class="mt-4 pt-2 fs-6c">
+                Skills: </div>
+              <div  class="fs-6c  mt-2 fw-lighter opacity" >
+                User research <br>
+                UI-UX design <br>
+                Prototyping <br>
 
-
-  <div id="container" class="container container_behance">
-    <a target="_blank" href="https://www.behance.net/elisamanzoni">
-
-    <div id="link_progetti" class="link_progetti">Watch more projects on my Behance
-      <img src="images/arrow_right.png" class="arrow_right arrow_right1"></div></a>
-  </div>
-
-  <!-- <div id="container" class="container">
-    <div id="container_zefir" class="pointer">
-      <div id="year" class="lavori_nomi year"> 2019 </div>
-      <div id="zefir_nome" class="lavori_nomi nome"> Zefir </div>
-      <img src="images/arrow.png" id="zefir_arrow" class="lavori_nomi arrow">
-      <div id="categoria" class="lavori_nomi categoria"> Brand identity </div>
-    </div>
-    <div id="description_zefir" class="display_none">
-      <img src="images/zefir.png" class="img">
-      <div class="work_description_total">
-        <div id="work_description" class="work_description">
-          Fictional flying cars brand that manifests its values ​​in every declination.
-        </div>
-        <div id="work_description2" class="work_description">
-          Skills: <br>
-          - Visual Identity<br>
-          - UX / UI<br>
-          - Service design <br>
-          - Team working
-        </div>
-        <div id="work_description3" class="work_description link">
-          <a target="_blank" href="https://www.behance.net/gallery/100108377/ZEFIR" class="green"> Complete project → </a> <br>
-          <a target="_blank" href="https://youtu.be/V7d_GVEcouw" class="green"> Zefir app video → </a>
+              </div>
+            </div>
         </div>
       </div>
     </div>
-    <div id="line_works" class="line line_works"></div>
-  </div> -->
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
 
 
-</div>
+    <!-- animus -->
+    <div class="row py-5 px-md-5 px-4 text-white work" id="animus" onclick="changePage(this)" href="index.html">
+      <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 ">
+        <img src="images/animus1.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 d-flex align-items-stretch">
+        <div class="row">
+          <div class="col-12">
+            <div class="fs-2c mt-lg-0 mt-3">
+              PoliMi app redesign + Animus </div>
+            <div class="fs-3c" >
+              A new smart way of managing university rooms </div>
+
+            <div  class="mt-2 fs-6c fw-lighter opacity">
+              University project </div>
+
+            <div  class="mt-4 pt-2 fs-6c">
+                Skills: </div>
+              <div  class="fs-6c  mt-2 fw-lighter opacity" >
+                User research <br>
+                UI-UX design <br>
+                User testing <br>
+                Prototyping <br>
+
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+  <!-- deposito -->
+  <div class="row py-5 px-md-5 px-4 text-white work" id="deposito" onclick="changePage(this)" href="index.html">
+    <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 ">
+      <img src="images/deposito.png" class="works_img">
+    </div>
+    <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 d-flex align-items-stretch">
+      <div class="row">
+        <div class="col-12">
+          <div class="fs-2c mt-lg-0 mt-3">
+            Deposito Cinerario Italiano </div>
+          <div class="fs-3c" >
+            Communicative machine speculating on death </div>
+
+          <div  class="mt-2 fs-6c fw-lighter opacity">
+            Bachelor thesis project </div>
+
+          <div  class="mt-4 pt-2 fs-6c">
+              Skills: </div>
+            <div  class="fs-6c  mt-2 fw-lighter opacity" >
+              Digital interaction <br>
+              UI / UX <br>
+              Web programming <br>
+              Space design
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+  <!-- izi -->
+  <div class="row py-5 px-md-5 px-4 text-white work" id="izi" onclick="changePage(this)" href="index.html">
+    <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 ">
+      <img src="images/izi.png" class="works_img">
+    </div>
+    <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 d-flex align-items-stretch">
+      <div class="row">
+        <div class="col-12">
+          <div class="fs-2c mt-lg-0 mt-3">
+            Izi photo mosaic </div>
+          <div class="fs-3c" >
+            Common digital space that invites users to collaborate </div>
+
+          <div  class="mt-2 fs-6c fw-lighter opacity">
+            University project </div>
+
+          <div  class="mt-4 pt-2 fs-6c">
+              Skills: </div>
+            <div  class="fs-6c  mt-2 fw-lighter opacity" >
+              Digital interaction <br>
+              UI / UX <br>
+              Web programming
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+  <!-- jukebox -->
+  <div class="row py-5 px-md-5 px-4 text-white work" id="jukebox" onclick="changePage(this)" href="index.html">
+    <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 ">
+      <img src="images/jukebox4a.png" class="works_img">
+    </div>
+    <div class="col-lg-6 col-12 pe-md-2 ps-md-3 px-2 d-flex align-items-stretch">
+      <div class="row">
+        <div class="col-12">
+          <div class="fs-2c mt-lg-0 mt-3">
+            Memory Jukebox </div>
+          <div class="fs-3c" >
+            Interactive music toy to prevent senile dementia </div>
+
+          <div  class="mt-2 fs-6c fw-lighter opacity">
+            University project </div>
+
+          <div  class="mt-4 pt-2 fs-6c">
+              Skills: </div>
+            <div  class="fs-6c  mt-2 fw-lighter opacity" >
+              Prototyping<br>
+              UX<br>
+              User research <br>
+              C++ programing
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
 
 
 
-</body>
+
+  </body>
 
 
-</html>
+
+  </html>

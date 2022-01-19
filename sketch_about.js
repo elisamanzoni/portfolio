@@ -4,6 +4,8 @@ function preload() {
 
 function setup() {
 
+  createCanvas(windowWidth,windowHeight);
+
   var contact = select('#contact');
   contact.mouseClicked(contact_open);
 
@@ -98,6 +100,7 @@ function languages_open() {
     languages_arrow.removeClass('rotate');
   }
 }
+
 
 function changePage(obj){
   console.log(obj.id);

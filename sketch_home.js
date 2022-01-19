@@ -29,14 +29,10 @@ function setup() {
 function draw() {
     background("white");
 
-    for(var x = 620; x < 630; x += 150)
-   {
-     for(var y = 200; y < 210; y+=150)
-	{
-   myEye = new Eye(x, y);
+
+   myEye = new Eye(880, 120);
      myEye.display();
-   }
- }
+
   // put drawing code here
 }
 
@@ -78,7 +74,7 @@ else{
   textAlign(CENTER, CENTER);
 
   textSize(50);
-  translate(700, 150);
+  translate(950, 70);
   rotate(45);
   text("ouch!",0,0);
 
