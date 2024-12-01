@@ -1,437 +1,235 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+  <script type="text/javascript">
+    (function(c, l, a, r, i, t, y) {
+      c[a] = c[a] || function() {
+        (c[a].q = c[a].q || []).push(arguments)
+      };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "ahdxzjq8o3");
   </script>
 
-      <link href="style_custom.css" rel="stylesheet">
-      <script src="p5.min.js"></script>
-      <script src="p5.sound.min.js"></script>
-      <script src="sketch.js"></script>
-    <title>Manzoni Elisa</title>
-    <link rel="shortcut icon" href="images/favicon.png">
-    <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <link href="style.css" rel="stylesheet">
+  <link href="style-article.css" rel="stylesheet">
+  <title>Manzoni Elisa</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+
+</head>
+
+<!---
+            _ _           _
+  /\  /\___| | | ___     / \
+ / /_/ / _ \ | |/ _ \   /  /
+/ __  /  __/ | | (_) | /\_/
+\/ /_/ \___|_|_|\___/  \/
+
+ __    __ _                                   _                     ___
+/ / /\ \ \ |__  _   _    _   _  ___  _   _   | |__   ___ _ __ ___  / _ \
+\ \/  \/ / '_ \| | | |  | | | |/ _ \| | | |  | '_ \ / _ \ '__/ _ \ \// /
+ \  /\  /| | | | |_| |  | |_| | (_) | |_| |  | | | |  __/ | |  __/   \/
+  \/  \/ |_| |_|\__, |   \__, |\___/ \__,_|  |_| |_|\___|_|  \___|   ()
+                |___/    |___/
+
+-->
+
+<body>
+
+  <!-- navbar -->
+  <div class="navbar">
+    <a class="nav-item" href="index.html">Portfolio</a>
+    <a class="nav-item"  href="images/Manzoni_Elisa_CV_2024.pdf" target="_blank">Resume</a>
+    <a class="nav-item" href="mailto:elisamanzoni.design@gmail.com">Get in touch</a>
+  </div>
 
 
+  <div class="content article">
 
-  </head>
-  <body class="bg-black">
 
-    <!-- navbar -->
-    <div class="row navbar_size mx-0 pt-2 pb-2 text-white position-fixed w-100 bg-black padding-row" style="border-color:white!important; z-index:5">
-      <div class="col d-flex align-items-end">
-        <a class="ME text-white" href="index.html"></a>
-      </div>
-      <div class="col text-end fs-6c d-flex align-items-end justify-content-end ">
-        <a href="about.html" class=" mx-md-3 mx-2 hover_bg_green text-white">About</a>
-        <a href="works.html" class=" mx-md-3 mx-2 hover_bg_green  text-white">Works</a>
-        <a class=" mx-md-3 mx-2 hover_bg_green  text-white" id="contact">Contact</a>
+    <!-- intro -->
+
+    <div class="article-intro">
+      <div class="article-intro-text">
+        <div class="article-header">
+          <div class="body-s">
+            Year <b>2022</b>
+          </div>
+          <div class="body-s">
+            Company <b>Amazon</b>
+          </div>
+        </div>
+        <h1 class="display-s">
+          Amazon <br> Learning Tool redesign
+        </h1>
+        <p class="body-m">
+          In 2022, Amazon undertook a full redesign of its internal Learning Management System (LMS) to simplify training across the organization. Previously, Amazon relied on 9 different third-party LMS platforms, which presented considerable usability challenges due to their complexity.
+          <span />
+          This redesign aimed to create a unified system to streamline training processes and improve the user experience.
+        </p>
       </div>
     </div>
 
-<!-- contact -->
-<div id="contact_container" class="contact_container_sparito display_none">
-  <div class="exit mb-4" id="exit"></div>
-  <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
-  <a class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
+    <img class="article-image" src="images/amazon/1.png">
+
+    <div class="article-content-wrapper">
+      <div class="article-text-wrapper">
+        <h2 class="title-m">
+          My role
+        </h2>
+        <p class="body-s">
+          As a UX Design Intern, I supported the lead designer by taking charge of the research, design, and testing phases of the Amazon Learning Tool redesign. Working alongside the lead designer, I also collaborated closely with a UX researcher and development team to ensure the redesign addressed user needs effectively.
+        </p>
+      </div>
+      <div class="article-text-wrapper">
+        <h2 class="title-m">
+          Personal thoughts
+        </h2>
+        <p class="body-s">
+          This project was my first experience working for a large organization, and it was inspiring to collaborate with such a diverse team. A key challenge was defining user needs early in the process, as they were initially unclear. Through close collaboration with the UX researcher, we successfully identified key pain points and addressed them in the redesign.
+          <span />
+          Presenting the final prototype to Amazon’s leadership team was a career highlight—directors quickly grasped the flow and design intent, which reinforced the value of our work.
+        </p>
+      </div>
+    </div>
+
+    <img class="article-image medium" src="images/amazon/2.png">
+
+    <!-- content -->
+
+    <div class="article-content-wrapper">
+      <div class="article-text-wrapper">
+        <h2 class="title-m">
+          User research
+        </h2>
+        <div>
+        <p class="body-s">
+          <b>Defining Customers</b>  <br />
+          The primary users of the Learning Tool are learning administrators responsible for assigning training to employees and ensuring assignments are accurate.
+          <br><span />
+          <b>Identifying User Needs</b>  <br />
+          Usability testing of the existing platform with 10 administrators revealed key pain points:
+          <ul class="body-s">
+            <li>
+              <b>Frequent Errors: </b>
+              Complex workflows led to incorrect training assignments.
+            </li>
+            <li>
+              <b>Repetitive Processes: </b>
+              Administrators often had to repeat steps to assign training to large groups, wasting time.
+            </li>
+            <li>
+              <b>Poor Experience: </b>
+              13% of users found the platform frustrating due to unclear workflows and insufficient guidance.
+            </li>
+          </ul>
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <img class="article-image medium" src="images/amazon/5.png">
+
+
+    <div class="article-content-wrapper">
+      <div class="article-text-wrapper">
+        <h2 class="title-m">
+          Analysis and Wireframe
+        </h2>
+        <div>
+          <p class="body-s">
+            An analysis of the current workflow, conducted in collaboration with the Tech Product Manager, highlighted significant usability issues. The learner selection step emerged as a major pain point, with unclear terminology and a lack of guidance complicating the process.
+            <br><span></span>
+          Research into similar tools from Google and Facebook informed the creation of a streamlined, multi-step workflow for selecting learners. This approach simplified navigation and reduced errors, making the process more intuitive.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <img class="article-image medium" src="images/amazon/3.png">
+
+
+  <div class="article-content-wrapper">
+    <div class="article-text-wrapper">
+      <h2 class="title-m">
+        Design Solutions
+      </h2>
+      <div>
+        <p class="body-s">
+          <b>Familiar Language</b><br>
+          A collaboration with UX writers introduced consistent, approachable terminology, improving clarity and reducing confusion.
+          <br><span></span>
+          <b>Guidance and Support</b><br>
+          Hint cards and FAQ links were added to provide users with contextual guidance throughout the process, addressing the needs of first-time users.
+          <br><span></span>
+          <b>Error Prevention</b><br>
+          Real-time feedback on learner selection was incorporated, preventing incorrect assignments and enhancing workflow transparency.
+          <br><span></span>
+          <b>Accessibility</b>  <br />
+          An accessibility document was developed to ensure the redesign adhered to Amazon’s inclusivity standards, making the tool usable for a diverse audience.
+      </p>
+      </div>
+    </div>
+  </div>
+
+<img class="article-image medium" src="images/amazon/4.png">
+
+<div class="article-content-wrapper">
+  <div class="article-text-wrapper">
+    <h2 class="title-m">
+      Test and Results
+    </h2>
+    <div>
+      <p class="body-s">
+        <b>Validating the Prototype</b><br>
+        Usability testing, conducted with nine learning administrators, led to a 7.5-point improvement in the System Usability Score (SUS). Feedback from these sessions emphasized the importance of providing guidance for new users, which informed the implementation of hint cards and contextual help.
+        <br><span></span>
+      <b>Launch and Early Results</b><br>
+      The redesigned Amazon Learning Tool launched in January 2023 to positive feedback, with significant improvements in usability and user satisfaction. The streamlined interface and error prevention features contributed to more efficient training management across Amazon.
+    </p>
+    </div>
+  </div>
 </div>
 
 
-<!-- spazio da navbar -->
-    <div class="pt-5">
-    </div>
-
-    <div class="row text-white mt-5">
-      <div class="col-12 text-center">
-        <div class="fs-1c mt-lg-0 my-3">
-          Amazon learning tool - redesign </div>
-        </div>
-    </div>
-
-    <!-- img -->
-        <div class="row text-white mt-4 padding-row">
-          <div class="col-lg-6 col-12">
-            <img src="images/amazon1.png" class="works_img">
-          </div>
-          <div class="col-lg-6 col-12  mt-3 mt-lg-0">
-            <img src="images/amazon2.png" class="works_img">
-          </div>
-        </div>
-
-    <div class="row text-white mt-5  padding-row">
-      <div class="col-md-6 col-12 px-3">
-        <div class="fs-3c mt-4" >
-          How to assign training <br>in an intuitive way </div>
-      </div>
-      <div class="col-md-3 col-6 px-md-3">
-        <div  class="mt-4 pt-2 fs-6c">
-            My role: </div>
-          <div  class="fs-6c  mt-2 fw-lighter opacity" >
-            UX designer<br>
-            Collaborate with UX researcher
-          </div>
-      </div>
-      <div class="col-md-3 col-6 px-md-3">
-        <div  class="mt-4 pt-2 fs-6c">
-            Product stage: </div>
-          <div  class="fs-6c  mt-2 fw-lighter opacity" >
-            Development
-          </div>
-      </div>
-    </div>
-
-<!-- intro -->
-    <div class="row text-white mt-5 padding-row">
-      <div class="col-lg-6 col-12">
-        <div class="fs-2c mt-4" >
-          How to improve the usability <br>of the current Amazon learning tool? </div>
-      </div>
-      <div class="col-lg-3 col-12 px-md-3">
-        <div  class="mt-4 pt-2 fs-6c ">
-          <span class="opacity fw-lighter ">
-            Today Amazon uses 9 different Learning Management Systems (LMSs) to stay compliant with policy-mandatory training. Each of these systems is a 3rd party product and they are very complex to use. That’s why Amazon decided to create its first federated LMS.
-          </span>
-          </div>
-      </div>
-      <div class="col-lg-3 col-12 px-md-3">
-        <div  class="mt-lg-4 pt-lg-2 fs-6c ">
-
-      <span class="opacity  fw-lighter">
-        In 2020, they started to develop a Beta version of this tool, which had some problems. Therefore, in 2022 Amazon decided to start the redesign of this version. My main requirement was to </span>make the UI consistent<span class="opacity  fw-lighter"> with the rest of Amazon's internal products using an existing design system, but I also wanted to </span>see if the current UX solved the customers' problems.
-        </span>
-      </div>
-      </div>
-    </div>
-
-    <div class="row text-white mt-5 padding-row">
-      <div class="col-lg-6 col-12">
-        <img src="images/amazon10.png" class="works_img">
-      </div>
-      <div class="col-lg-6 col-12 mt-3 mt-lg-0">
-        <img src="images/amazon8.png" class="works_img">
-      </div>
-    </div>
+<div class="article-video-container amazon">
+  <iframe class="article-video" src="https://player.vimeo.com/video/1034831851?background=1&muted=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
 
 
-<!-- 1 -->
-    <div class="row text-white mt-5 pt-4 padding-row">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c mt-4" >
-          1. Define customers' problems </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-4 pt-2 fs-6c ">
-          <span class="opacity fw-lighter ">
-            The customers of the experience I worked on are </span>learning administrators.<span class="opacity fw-lighter ">
-            Today they have to perform 2 different tasks: assign training to a group of amazon employees and check if these trainings are correctly assigned.
-            From a previous research, the product team identified 2 core problems.
-            </span>
-      </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-lg-4 pt-lg-2 fs-6c ">
-           <span class="opacity fw-lighter ">
-             </span>
-             <ol><li>Assign incorrectly trainings:<span class="opacity fw-lighter "> from 2018 this cost $5M in time lost in taking unnecessary training. </li>
-             <li></span>Poor customer experience:<span class="opacity fw-lighter "> the System Usability Score of the current experience was 75/100, which is good but it could be improved
-            </ol></li>
-             </span>
-        </div>
-    </div>
-    </div>
 
-<!-- 2 -->
-    <div class="row text-white mt-5 pt-0 padding-row">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c mt-4" >
-          2. Why do admins assign incorrect training? </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-4 pt-2 fs-6c ">
-          <span class="opacity fw-lighter ">
-            To understand the problem, I run 2 working sessions with the Tech Product Manager to analyse the flow.
-          </span>
-      </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-lg-4 pt-md-2 fs-6c ">
-          <span class="opacity fw-lighter ">
-          Customers found as most challenging step throughout the workflow the </span>step of selecting a group of learners<span class="opacity fw-lighter "> based on up to 17 different types of criteria (e.g. Job level, company, work location...)
-          </span>
-        </div>
-    </div>
-    </div>
 
-<!-- img -->
-    <div class="row text-white mt-5 pt-5 padding-row">
-      <div class="col-lg-6 col-12">
-        <img src="images/amazon9.png" class="works_img">
-      </div>
-      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
-        <img src="images/amazon11.png" class="works_img">
-      </div>
-    </div>
+<!-- footer -->
 
-<!-- 3 -->
-    <div class="row text-white mt-5 pt-4 padding-row">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c mt-4" >
-          3. Core problems of selecting learners</div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-4 pt-2 fs-6c ">
-          <span class="opacity fw-lighter ">
-            I identified 2 core problems of the step of selecting learners: <br>
-          </span><ul class="mt-1"><li>Use of unfamiliar language and lack of guidance:<span class="opacity fw-lighter "> this creates difficulties for customers in selecting the right criteria, thus selecting the right group of learners.</li></ul>
-            </span>
-      </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-lg-4 pt-lg-2 fs-6c ">
-        <span class="opacity fw-lighter ">
-        </span><ul><li>Unable to check the number of learners selected:<span class="opacity fw-lighter "> admins could easily submit the assignment and assign the training to 30000 learners, even if they only wanted to assign it to 500.</li></ul>
-          </span>
-        </div>
-    </div>
-    </div>
+    <div class="work-footer">
+      <a class="button m" href="index.html">
+        See other projects
+        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 12.5L8.6 11.05L12.15 7.5H0V5.5H12.15L8.6 1.95L10 0.5L16 6.5L10 12.5Z"/>
+        </svg>
+      </a>
 
-<!-- 4 -->
-    <div class="row text-white mt-5 pt-0 padding-row">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c mt-4" >
-          4. Industry benchmarking </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-4 pt-2 fs-6c ">
-          <span class="opacity fw-lighter ">
-            I analysed how other companies select a wide range of population (e.g. Google, Facebook, Jira). I found out that they </span>use 2 main different approaches:<span class="opacity fw-lighter ">
-            </span>
-      </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-lg-4 pt-md-2 fs-6c fw-lighter">
-          <span class="opacity fw-lighter ">
-            <ol><li>Select criteria approach: it uses 3 field to select a condition and unfamiliar language</li>
-            <li>Select audience approach: it groups the category and it uses a natural language</li></ol>
-          </span>
-        </div>
-    </div>
-    </div>
 
-<!-- img -->
-    <div class="row text-white  mt-lg-4 mt-3 padding-row">
-      <div class="col-lg-6 col-12">
-        <img src="images/amazon4.png" class="works_img">
-      </div>
-      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
-        <img src="images/amazon5.png" class="works_img">
-      </div>
     </div>
 
 
 
-<!-- 5 -->
-    <div class="row text-white mt-5 pt-4 padding-row">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c mt-4" >
-          5. Design exploration and reviews</div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-4 pt-2 fs-6c ">
-        <span class="opacity fw-lighter ">
-          I created </span>2 core design explorations<span class="opacity fw-lighter "> based on the 2 approaches analysed from the industry benchmarking and I </span>reviewed them<span class="opacity fw-lighter "> with the design team, product team and the accessibility consultant.
-        </span>
-
-      </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-lg-4 pt-lg-2 fs-6c ">
-          <span class="opacity fw-lighter ">
-            After the reviews I opted to follow the “select criteria” approach because admins were more familiar with this pattern, but I improved it to make it also easy-to-use for first-time users.
-          </span>
-        </div>
-    </div>
-    </div>
-
-<!-- 6 -->
-    <div class="row text-white mt-5 pt-4 padding-row">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c mt-4" >
-          6. Usability testing</div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-4 pt-2 fs-6c ">
-        <span class="opacity fw-lighter ">
-          With the UX researcher, I conducted a Usability Testing with 9 admins. </span>The System Usability Score of the new design was excellent.<span class="opacity fw-lighter "> It increased of 7.5 points from the current experience, solving the problem of a poor Customer experience.
-        </span>
-      </div>
-      </div>
-      <div class="col-lg-3 col-12 px-lg-3">
-        <div  class="mt-lg-4 pt-lg-2 fs-6c ">
-          <span class="opacity fw-lighter ">
-            One of the feedback we received was that first-time users still need more guidance, so I implemented a hint card: a card that will appear only for first-time users. It provides more info about the page and it links the FAQ page.
-          </span>
-        </div>
-    </div>
-    </div>
-
-<!-- img -->
-    <div class="row text-white  mt-lg-4 mt-3 padding-row">
-      <div class="col-lg-6 col-12">
-        <img src="images/amazon6.png" class="works_img">
-      </div>
-      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
-        <img src="images/amazon7.png" class="works_img">
-      </div>
-    </div>
-
-    <!-- 7 -->
-        <div class="row text-white mt-5 pt-4 padding-row  mb-5 pb-5">
-          <div class="col-lg-6 col-12">
-            <div class="fs-3c mt-4" >
-              7. Leadership Team presentation & launch
-            </div>
-          </div>
-          <div class="col-lg-3 col-12 px-lg-3">
-            <div  class="mt-4 pt-2 fs-6c ">
-            <span class="opacity fw-lighter ">
-              After the definition of the design I had the possibility to present the new prototype to the leadership team (5+ directors). They easily understood the flow: they didn’t have any questions regarding the scenario.
-            </span>
-
-          </div>
-          </div>
-          <div class="col-lg-3 col-12 px-lg-3">
-            <div  class="mt-lg-4 pt-lg-2 fs-6c ">
-              <span class="opacity fw-lighter ">
-                I collaborate with the tech team and the accessibility expert to provide guidance on the development of the product which is </span>launched in January 2023.
-            </div>
-        </div>
-
-
-    <!-- other projects -->
-    <div class="row text-white mt-5 pt-0 padding-row">
-      <div class="col-12">
-        <div class="fs-2c mt-4" >
-        Other projects </div>
-      </div>
-    </div>
-
-    <hr class="bg-white mb-0 mt-lg-5 mt-3" style="opacity:1; height:1.5px"/>
-
-    <!-- easydream -->
-    <div class="row text-white py-4 padding-row work" id="easydream" onclick="changePage(this)">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c" >
-        Easydream </div>
-        <div class="fs-6c  fw-lighter" >
-      A new way to inspire people to choose their next travel destination  </div>
-      </div>
-      <div class="col-lg-6 col-12 d-flex align-items-center">
-        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
-          User research -
-          UX-UI design -
-          Prototyping
-      </div>
-    </div>
-    </div>
-
-    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
-
-    <!-- animus -->
-    <div class="row text-white py-4 padding-row work d-none" id="animus" onclick="changePage(this)">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c" >
-        PoliMi app redesign + Animus </div>
-        <div class="fs-6c  fw-lighter" >
-        A new smart way of managing university rooms  </div>
-      </div>
-      <div class="col-lg-6 col-12 d-flex align-items-center">
-        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
-          User research -
-          UI-UX design -
-          User testing -
-          Prototyping
-      </div>
-    </div>
-    </div>
-
-    <hr class="bg-white my-0 d-none" style="opacity:1; height:1.5px"/>
-
-    <!-- deposito -->
-    <div class="row text-white py-4 padding-row work" id="deposito" onclick="changePage(this)">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c" >
-        Deposito Cinerario Italiano </div>
-        <div class="fs-6c  fw-lighter" >
-        Communicative machine speculating on death  </div>
-      </div>
-      <div class="col-lg-6 col-12 d-flex align-items-center">
-        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
-          Digital interaction -
-          UI / UX -
-          Web programming -
-          Space design
-      </div>
-    </div>
-    </div>
-
-    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
-
-    <!-- izi -->
-    <div class="row text-white py-4 padding-row work" id="izi" onclick="changePage(this)">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c" >
-        Izi photo mosaic </div>
-        <div class="fs-6c  fw-lighter" >
-        Common digital space that invites users to collaborate  </div>
-      </div>
-      <div class="col-lg-6 col-12 d-flex align-items-center">
-        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
-          Digital interaction -
-          UI / UX -
-          Web programming
-      </div>
-    </div>
-    </div>
-
-    <hr class="bg-white my-0 " style="opacity:1; height:1.5px"/>
-
-    <!-- music jukebox -->
-    <div class="row text-white py-4 padding-row work" id="jukebox" onclick="changePage(this)">
-      <div class="col-lg-6 col-12">
-        <div class="fs-3c" >
-        Memory jukebox </div>
-        <div class="fs-6c  fw-lighter" >
-        Interactive music toy to prevent senile dementia  </div>
-      </div>
-      <div class="col-lg-6 col-12 d-flex align-items-center">
-        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
-          Prototyping -
-          UX -
-          User research -
-          C++ programing
-      </div>
-    </div>
-    </div>
-
-    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+  </div>
 
 
 
 
-  </body>
-
-
-
-  </html>
+</body>
