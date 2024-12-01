@@ -273,16 +273,16 @@ body{
 @media (max-width: 1024px) {
 
   :root {
-    --fs-display-l: 40px;
-    --fs-display-s: 40px;
+    --fs-display-l: 36px;
+    --fs-display-s: 36px;
 
     --fs-title-l: 32px;
     --fs-title-m: 28px;
 
     --fs-body-xl: 24px;
-    --fs-body-l: 20px;
-    --fs-body-m: 20px;
-    --fs-body-s: 18px;
+    --fs-body-l: 18px;
+    --fs-body-m: 16px;
+    --fs-body-s: 16px;
 
     --fs-label: 16px;
   }
