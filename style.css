@@ -70,7 +70,7 @@ a:hover {color: var(--color-brand); transition: 0.2s}
 
 body{
   font-family: 'Manrope', sans-serif;
-  padding:0px 40px;
+  padding:0px 0px;
   margin:0px;
   color: var(--color-primary);
   background-color: var(--color-tertiary);
@@ -78,10 +78,16 @@ body{
   overflow-x:hidden;
 }
 
+body > div {
+  padding-left:40px!important;
+  padding-right:40px!important;
+}
+
+
+
 /* ------- Navbar ---------- */
 
 .navbar{
-  width:100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +150,7 @@ a.nav-item:active{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:100%
+  padding: 0px 0px;
 }
 
 .content > div{
@@ -320,8 +326,14 @@ a.nav-item:active{
   }
 
   body{
-    padding:0px 24px;
+    padding:0px 0px;
   }
+
+  body > div {
+    padding-left:24px!important;
+    padding-right:24px!important;
+  }
+
 
   /* ------- Navbar ---------- */
 
@@ -363,7 +375,7 @@ a.nav-item:active{
     height:32px;
   }
 
-  .logo-name{
+  .logo-wrapper{
     display:none
   }
 
