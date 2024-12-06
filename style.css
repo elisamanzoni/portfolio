@@ -44,6 +44,8 @@
 
 .label { font-size: var(--fs-label); font-weight: normal;}
 
+.bold{font-weight: var(--fw-bold);}
+
 .body-m > span{
   margin-top: 16px;
   display: block;
@@ -75,7 +77,9 @@ a:hover {color: var(--color-brand); transition: 0.2s}
 .uppercase{text-transform: uppercase;}
 
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   font-family: 'Manrope', sans-serif;
@@ -118,6 +122,7 @@ body > div {
   display: flex;
   gap: 8px;
   font-size: var(--fs-body-s);
+  text-decoration: none;
 }
 
 .logo-wrapper > p > b{
@@ -388,6 +393,41 @@ a.nav-item:active{
   border-radius: 24px;
 }
 
+/* ------------- Pokemon moves --------------------------------------- */
+
+.moves{
+  background-color: var(--color-primary-dark);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.moves-container{
+  padding-top: 100px;
+  padding-bottom: 150px;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.moves-wrapper{
+  display: flex;
+  gap: 100px;
+}
+
+.moves-item-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width:100%;
+}
+
+.move-type{
+  height: 20px;
+  width: auto;
+}
 
 /* TABLET ------------------------------------------------- */
 
@@ -439,6 +479,12 @@ a.nav-item:active{
     width: 300px;
     height: 300px;
   }
+
+  .moves-wrapper{
+    gap: 24px;
+  }
+
+
 
 }
 
@@ -515,6 +561,20 @@ a.nav-item:active{
     height:300px;
     width:100%;
     object-fit: cover;
+  }
+
+  .moves-container{
+    padding: 80px 0px;
+    gap:60px
+  }
+
+  .moves-wrapper{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .move-type{
+    height: 16px;
   }
 
 
