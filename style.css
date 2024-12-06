@@ -573,8 +573,16 @@ a.nav-item:active{
     gap: 40px;
   }
 
+  .moves-item-wrapper{
+    gap:8px
+  }
+
   .move-type{
     height: 16px;
+  }
+
+  .moves-title-wrapper > div > .body-m{
+    font-size: 20px;
   }
 
 
