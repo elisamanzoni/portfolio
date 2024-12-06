@@ -20,6 +20,7 @@
   </script>
 
   <link href="style.css" rel="stylesheet">
+  <link href="avatar.css" rel="stylesheet">
   <title>Manzoni Elisa</title>
   <link rel="shortcut icon" href="images/favicon.png">
   <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
@@ -33,12 +34,12 @@
 / __  /  __/ | | (_) | /\_/
 \/ /_/ \___|_|_|\___/  \/
 
- __    __ _                                   _                     ___
-/ / /\ \ \ |__  _   _    _   _  ___  _   _   | |__   ___ _ __ ___  / _ \
-\ \/  \/ / '_ \| | | |  | | | |/ _ \| | | |  | '_ \ / _ \ '__/ _ \ \// /
- \  /\  /| | | | |_| |  | |_| | (_) | |_| |  | | | |  __/ | |  __/   \/
-  \/  \/ |_| |_|\__, |   \__, |\___/ \__,_|  |_| |_|\___|_|  \___|   ()
-                |___/    |___/
+ __    __ _                 _                     ___
+/ / /\ \ \ |__  _   _      | |__   ___ _ __ ___  / _ \
+\ \/  \/ / '_ \| | | |     | '_ \ / _ \ '__/ _ \ \// /
+ \  /\  /| | | | |_| |     | | | |  __/ | |  __/   \/
+  \/  \/ |_| |_|\__, |     |_| |_|\___|_|  \___|   ()
+                |___/
 
 -->
 
@@ -46,9 +47,15 @@
 
   <!-- navbar -->
   <div class="navbar">
-    <a class="nav-item" href="index.html">Portfolio</a>
-    <a class="nav-item"  href="images/Manzoni_Elisa_CV_2024.pdf" target="_blank">Resume</a>
-    <a class="nav-item" href="mailto:elisamanzoni.design@gmail.com">Get in touch</a>
+    <div class="logo-wrapper">
+      <img class="logo" src="images/logo.png" alt="Logo" />
+      <p class="nav-item logo-name"><b>M</b>anzoni <b>E</b>lisa</p>
+    </div>
+    <div class="navbar-item-wrapper">
+      <a class="nav-item" href="index.html">Portfolio</a>
+      <a class="nav-item"  href="images/Manzoni_Elisa_CV_2024.pdf" target="_blank">Resume</a>
+      <a class="nav-item" href="mailto:elisamanzoni.design@gmail.com">Get in touch</a>
+    </div>
   </div>
 
   <div class="content">
@@ -66,13 +73,9 @@
     </div>
 
 
-    <a class="hero-gif" href="mailto:elisamanzoni.design@gmail.com">
-      <div style="display:flex">
-        <p class="body-m"> Say hello!
-        <p>
+      <div class="Character">
+        <img class="Character_spritesheet pixelart face-down" src="images/avatar-sprite.png" alt="Character" />
       </div>
-      <img src="images/home-gif.gif" alt="Spongebob saying hello" style="width:100%;height:auto;">
-    </a>
 
 
   </div>
@@ -82,10 +85,10 @@
 
 
     <!-- Artshell -->
-    <div class="work-item">
-      <div>
+    <div class="work-item" >
+      <a href="artshell.html">
         <img src="images/artshell/0.png" alt="Artshell Export Feature">
-      </div>
+      </a>
       <div class="work-text-wrapper">
         <div class="work-text">
           <div class="work-title">
@@ -108,9 +111,9 @@
 
     <!-- Amazon -->
     <div class="work-item">
-      <div>
+      <a href="amazon.html">
         <img src="images/amazon/0.png" alt="Amazon Learning tool">
-      </div>
+      </a>
       <div class="work-text-wrapper">
         <div class="work-text">
           <div class="work-title">
@@ -138,9 +141,9 @@
 
     <!-- easyDream -->
     <div class="work-item">
-      <div>
+      <a href="easydream.html">
         <img src="images/easydream/0.png" alt="easyDream cover">
-      </div>
+      </a>
       <div class="work-text-wrapper">
         <div class="work-text">
           <div class="work-title">
@@ -164,9 +167,9 @@
 
         <!-- easyDream -->
         <div class="work-item">
-          <div>
+          <a href="localtracks.html">
             <img src="images/localtracks/0.png" alt="Placeholder">
-          </div>
+          </a>
           <div class="work-text-wrapper">
             <div class="work-text">
               <div class="work-title">

@@ -1,0 +1,58 @@
+:root {
+   --pixel-size: 12;
+}
+
+body {
+   background: #F6F8FB;
+}
+
+.Character {
+   width: calc(34px * var(--pixel-size));
+   height: calc(34px * var(--pixel-size));
+   overflow: hidden;
+   position: relative;
+}
+
+.Character_spritesheet {
+   animation: moveSpritesheet 1s steps(2) infinite;
+   width: calc(68px * var(--pixel-size));
+   position: absolute;
+}
+
+.Character_spritesheet:hover {
+     top: calc(-42px * var(--pixel-size));
+}
+
+.pixelart {
+   image-rendering: pixelated;
+}
+
+
+
+
+@keyframes moveSpritesheet {
+   from {
+      transform: translate3d(0px,0,0)
+   }
+   to {
+      transform: translate3d(-100%,0,0)
+   }
+
+}
+
+
+/* TABLET ------------------------------------------------- */
+
+@media (max-width: 1024px) {
+
+  :root {
+     --pixel-size: 6;
+  }
+
+}
+
+@media (max-width: 425px) {
+  :root {
+     --pixel-size: 6;
+  }
+}
